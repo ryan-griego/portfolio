@@ -20,9 +20,9 @@ function Contact(props) {
             <LazyLoad
               debounce={false}
               offsetVertical={350}>
-              <img src="./images/Kevin-Akahoshi-Horizontal-Logo-(No-Border).png"
+              <img src="./images/portfolio-ryan-logo.png"
                 className="img-fluid footer-logo fade-in"
-                alt="Kevin Akahoshi" />
+                alt="Ryan Griego" />
             </LazyLoad>
           </Col>
           <Col sm="4" className="d-none d-sm-block">
@@ -44,19 +44,19 @@ function Contact(props) {
             <p className="text-center mb-md-0 mx-4">
               <a href="tel:+19492027141"
                 className="pointer pb-2 default-nav p-0">
-                <i className="fas fa-phone-alt mr-2" />949-202-7141
+                <i className="fas fa-phone-alt mr-2" />949-310-8534
               </a>
             </p>
             <p className="text-center mb-0 mx-4">
-              <a href="mailto:kevin.akahoshi@gmail.com"
+              <a href="mailto:ryangriego@gmail.com"
                 className="pointer pb-2 default-nav p-0">
-                <i className="fas fa-envelope mr-2" />kevin.akahoshi@gmail.com
+                <i className="fas fa-envelope mr-2" />ryangriego@gmail.com
               </a>
             </p>
           </Row>
           <Row className="justify-content-center">
             <div className="mt-5 d-flex">
-              <a href="https://github.com/kevinakahoshi/"
+              <a href="https://github.com/ryan-griego/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-color contact-general pointer m-auto"
@@ -65,7 +65,7 @@ function Contact(props) {
                   <i className="fab fa-github medium-font m-auto" />
                 </div>
               </a>
-              <a href="https://www.linkedin.com/in/kevin-akahoshi/"
+              <a href="https://www.linkedin.com/in/ryan-griego-2134a340/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-color contact-general pointer mx-4 my-auto"
@@ -87,7 +87,7 @@ function Contact(props) {
             </div>
           </Row>
         </div>
-        <p className="mb-0 text-center h6">&copy; Kevin Akahoshi {props.year}</p>
+        <p className="mb-0 text-center h6">&copy; Ryan Griego {props.year}</p>
       </Container>
     </div>
   );

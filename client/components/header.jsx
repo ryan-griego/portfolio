@@ -49,7 +49,7 @@ class Header extends React.Component {
             }}
             className="pointer decoration-none">
               <img
-                src="./images/Kevin-Akahoshi-Horizontal-Logo-(No-Border).png"
+                src="./images/portfolio-ryan-logo.png"
                 className="img-fluid header-logo"
                 alt="K/A - Kevin Akahoshi" />
             </NavbarBrand>
@@ -101,7 +101,7 @@ class Header extends React.Component {
                     duration={1000}
                     className="pointer px-0 nav-link"
                     onClick={this.handleToggle}>
-                    Applications
+                    Websites
                   </Link>
                 </NavItem>
                 <NavItem className="ml-md-5">

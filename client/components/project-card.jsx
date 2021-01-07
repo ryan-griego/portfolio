@@ -6,6 +6,14 @@ import {
 } from 'reactstrap';
 
 function ProjectCard(props) {
+
+  let gitHubLink = <a className="btn btn-share default-nav decoration-none fade-in slide-in ml-3"
+    target="_blank"
+    rel="noopener noreferrer"
+    href={props.project.github}>
+    <i className="fab fa-github mr-2" />GitHub</a>;
+
+  let checkGithub = props.project.github === 'none' ? '' : gitHubLink;
   return (
     <Card className="h-100 rounded border slide-in-10"
       style={{ animationDelay: props.delay + 'ms' }}>
@@ -31,16 +39,12 @@ function ProjectCard(props) {
         </div>
       </CardBody>
       <CardFooter className="bg-white p-3">
-        <a className="btn btn-share default-nav decoration-none fade-in slide-in mr-3"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={props.project.github}>
-          <i className="fab fa-github mr-2" />GitHub</a>
         <a className="btn btn-share default-nav decoration-none fade-in slide-in"
           target="_blank"
           rel="noopener noreferrer"
           href={props.project.live}>
           <i className="far fa-window-restore mr-2" />Live</a>
+        {checkGithub}
       </CardFooter>
     </Card>
   );

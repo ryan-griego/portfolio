@@ -16,12 +16,12 @@ function AboutMe() {
             <LazyLoad
               debounce={false}
               offsetVertical={500}>
-              <img src="images/portrait-2020.png"
+              <img src="images/me-plant.png"
                 className="img-fluid fade-in slide-in-10"
-                alt="Portrait photo of Kevin Akahoshi with red/orange gradient of topographic pattern in the background" />
+                alt="Portrait photo of Ryan Griego with red/orange gradient of topographic pattern in the background" />
             </LazyLoad>
             <div className="my-3 d-flex justify-content-center fade-in slide-in-10">
-              <a href="https://github.com/kevinakahoshi/"
+              <a href="https://github.com/ryan-griego/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-github pointer mr-2"
@@ -30,7 +30,7 @@ function AboutMe() {
                   <i className="fab fa-github small-font m-auto" />
                 </div>
               </a>
-              <a href="https://www.linkedin.com/in/kevin-akahoshi/"
+              <a href="https://www.linkedin.com/in/ryan-griego-2134a340/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-linkedin pointer mr-2"
@@ -39,7 +39,7 @@ function AboutMe() {
                   <i className="fab fa-linkedin small-font m-auto" />
                 </div>
               </a>
-              <a href="tel:+19492027141"
+              <a href="tel:+19493108534"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-general pointer mr-2"
@@ -48,7 +48,7 @@ function AboutMe() {
                   <i className="fas fa-phone-alt small-font m-auto" />
                 </div>
               </a>
-              <a href="mailto:kevin.akahoshi@gmail.com"
+              <a href="mailto:ryangriego@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-general pointer mr-2"
@@ -57,7 +57,7 @@ function AboutMe() {
                   <i className="far fa-envelope small-font m-auto" />
                 </div>
               </a>
-              <a href="/assets/Kevin_Akahoshi.pdf"
+              <a href="/assets/Ryan_Griego.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-general pointer"
@@ -76,8 +76,8 @@ function AboutMe() {
                   <h3 className="heading mb-4 spread fade-in">About Me</h3>
                 </div>
                 <div className="slide-in-10">
-                  <p>I&#39;m Kevin Akahoshi, and I&#39;m a Software Engineer that has a passion for technology, coding, and a great cup of coffee.</p>
-                  <p>I&#39;m skilled in languages such as JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, PHP, HTML, and CSS. I&#39;m intimately familiar with tools like Git/GitHub, Postman, npm, and Webpack. Lastly, I&#39;ve participated in team-based hackathons, as well as some solo projects, to build full-stack web applications.</p>
+                  <p>I&#39;m Ryan Griego, and I&#39;m a Software Engineer that has a passion for technology, coding, and a great cup of coffee.</p>
+                  <p>I&#39;m skilled in languages such as JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, HTML, and CSS. I&#39;m intimately familiar with tools like Git/GitHub, Postman, npm, and Webpack.</p>
                   <p>What got me interested in coding initially was the ability to build cool things, but what keeps me going is that I can create software from nothing that solves real problems.</p>
                 </div>
               </div>
