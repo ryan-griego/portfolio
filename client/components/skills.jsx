@@ -29,8 +29,8 @@ function Skills() {
       logo: '/assets/icons/express.svg'
     },
     {
-      name: 'PHP',
-      logo: '/assets/icons/php.svg'
+      name: 'Wordpress',
+      logo: '/assets/icons/wordpress.svg'
     },
     {
       name: 'PostgreSQL',
@@ -53,8 +53,8 @@ function Skills() {
       logo: '/assets/icons/bootstrap.svg'
     },
     {
-      name: 'Material UI',
-      logo: '/assets/icons/material-ui.svg'
+      name: 'Woocommerce',
+      logo: '/assets/icons/woocommerce.svg'
     }
   ];
 
