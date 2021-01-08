@@ -1,8 +1,8 @@
 {
-  "name": "kevinakahoshi.com",
+  "name": "ryangriego.com",
   "version": "1.0.0",
   "private": true,
-  "description": "Simple and clean portfolio website.",
+  "description": "Portfolio website",
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "npm-run-all --silent --parallel dev:*",

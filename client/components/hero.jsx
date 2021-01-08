@@ -17,7 +17,7 @@ function Hero() {
             className="d-flex order-2 order-sm-1">
             <div className="m-auto">
               <h1 className="spread fade-in slide-in-10">Ryan Griego</h1>
-              <h2 className="text-muted h3 fade-in slide-in-10">Software Engineer</h2>
+              <h2 className="text-muted h3 fade-in slide-in-10">Web Developer</h2>
             </div>
           </Col>
           <Col md="6"
@@ -26,7 +26,7 @@ function Hero() {
               debounce={false}
               offsetVertical={350}>
               <img
-                src="/images/apps-resize.jpg"
+                src="/images/ryan-phones-j.jpg"
                 className="hero-image fade-in slide-in-10"
                 alt="Mocks of the different apps made on mobile phones." />
             </LazyLoad>

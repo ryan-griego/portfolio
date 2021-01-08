@@ -15,7 +15,7 @@ function ProjectCard(props) {
 
   let checkGithub = props.project.github === 'none' ? '' : gitHubLink;
   return (
-    <Card className="h-100 rounded border slide-in-10"
+    <Card className="h-100 item rounded border slide-in-10"
       style={{ animationDelay: props.delay + 'ms' }}>
       <CardBody
         className="p-3">

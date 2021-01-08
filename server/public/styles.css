@@ -53,8 +53,9 @@ body {
 
 .card {
   transition: .3s all;
-  box-shadow: 1px 2px 9px rgba(0, 0, 0, .12);
 }
+
+
 
 .skills-card {
   transition: .3s all;
@@ -263,6 +264,10 @@ a.decoration-none:hover::after {
   transition: .3s all;
   width: fit-content;
   margin: auto;
+}
+
+.item {
+  box-shadow: 1px 2px 9px rgba(0, 0, 0, .12);
 }
 
 .border-div {
