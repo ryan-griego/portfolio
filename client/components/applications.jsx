@@ -17,41 +17,41 @@ class Applications extends React.Component {
       projects: [
         {
           id: 1,
-          image: '/images/hi-tech-auto-carousel.jpg',
+          image: '/images/saferacks.jpg',
           alt: 'SafeRacks Thumbnail',
           name: 'SafeRacks',
-          technologies: ['React.js', 'PostgreSQL', 'Express', 'Bootstrap', 'HTML', 'CSS'],
+          technologies: ['Wordpress', 'Bootstrap', 'HTML', 'CSS'],
           description: 'Redesigned online store selling various garage storage products.',
           github: 'none',
           live: 'https://www.saferacks.com/'
         },
         {
           id: 2,
-          image: '/images/beacon-daily-carousel.jpg',
+          image: '/images/monsterrax.jpg',
           alt: 'Monsterrax Thumbnail',
           name: 'Monsterrax',
-          technologies: ['React.js', 'Node.js', 'Express', 'PostgreSQL', 'HTML', 'CSS'],
-          description: 'BA full stack Node.js and React shopping cart app.',
+          technologies: ['Wordpress', 'Bootstrap', 'HTML', 'CSS'],
+          description: 'Redesigned online store selling various garage storage products.',
           github: 'none',
           live: 'https://www.Monsterrax.com/'
         },
         {
           id: 1,
-          image: '/images/hi-tech-auto-carousel.jpg',
+          image: '/images/booksforyourprofession.jpg',
           alt: 'Books For Your Profession Project Thumbnail',
           name: 'Books For Your Professsion',
-          technologies: ['React.js', 'PostgreSQL', 'Express', 'Bootstrap', 'HTML', 'CSS'],
+          technologies: ['React.js', 'PostgreSQL', 'Express', 'Google Books API', 'Bootstrap', 'HTML', 'CSS'],
           description: 'An app for professionals who want to find out the most recommended books for their profession.',
           github: 'https://github.com/ryan-griego/books-for-your-profession',
           live: 'https://booksforyourprofession.ryangriego.com/'
         },
         {
           id: 2,
-          image: '/images/beacon-daily-carousel.jpg',
+          image: '/images/gameknight.jpg',
           alt: 'GameKnight Project Thumbnail',
           name: 'GameKnight',
           technologies: ['React.js', 'Node.js', 'Express', 'PostgreSQL', 'HTML', 'CSS'],
-          description: 'BA full stack Node.js and React shopping cart app.',
+          description: 'Full stack Node.js and React shopping cart app.',
           github: 'https://github.com/ryan-griego/gameknight',
           live: 'https://gameknight.ryangriego.com/'
         },

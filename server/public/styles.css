@@ -371,6 +371,7 @@ a.decoration-none:hover::after {
 .header-logo {
   max-width: 260px;
   border: 3px solid #212529;
+  border-radius: 6px;
 }
 
 .btn.disabled-opacity,
@@ -380,6 +381,7 @@ a.decoration-none:hover::after {
 
 .footer-logo {
   border: 3px solid #212529;
+  border-radius: 6px;
 }
 
 @media (max-width: 767px) {

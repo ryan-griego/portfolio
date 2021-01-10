@@ -37,8 +37,8 @@ function Tools() {
       logo: '/assets/icons/chrome-dev-tools.svg'
     },
     {
-      name: 'JIRA',
-      logo: '/assets/icons/jira.svg'
+      name: 'Chrome',
+      logo: '/assets/icons/chrome.svg'
     },
     {
       name: 'VS Code',
