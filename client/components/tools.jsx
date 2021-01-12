@@ -37,8 +37,8 @@ function Tools() {
       logo: '/assets/icons/chrome-dev-tools.svg'
     },
     {
-      name: 'Chrome',
-      logo: '/assets/icons/chrome.svg'
+      name: 'Trello',
+      logo: '/assets/icons/trello.svg'
     },
     {
       name: 'VS Code',
