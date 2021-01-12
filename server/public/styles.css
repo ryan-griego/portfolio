@@ -55,19 +55,11 @@ body {
   transition: .3s all;
 }
 
-
-
 .skills-card {
   transition: .3s all;
   border: 1px solid transparent;
   z-index: 0;
 }
-
-/* .skills-card:hover {
-  z-index: 1;
-  transform: translateY(-5px);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
-} */
 
 .carousel {
   height: 450px;
