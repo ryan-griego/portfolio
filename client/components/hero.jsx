@@ -26,7 +26,7 @@ function Hero() {
               debounce={false}
               offsetVertical={350}>
               <img
-                src="/images/ryan-phones-j.jpg"
+                src="/images/ryan-phones.jpg"
                 className="hero-image fade-in slide-in-10"
                 alt="Mocks of the different apps made on mobile phones." />
             </LazyLoad>

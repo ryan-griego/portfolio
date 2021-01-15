@@ -66,6 +66,15 @@ class Carousel extends React.Component {
           aria-label={`Project ${project.id}`} />;
       }
     });
+
+    const gitHubLink = <a href={currentProject.github}
+      className={'py-2 mr-3 icon-active'}
+      rel="noopener noreferrer"
+      target="_blank">
+      <i className="fab fa-github mr-2 icon-active" />GitHub
+    </a>;
+    const checkGithub = currentProject.github === 'none' ? '' : gitHubLink;
+
     const technologies = currentProject.technologies.map((technology, index) => {
       return <span key={index} className={`badge custom-badge text-white mr-2 ${slide}`}>{technology}</span>;
     });
@@ -138,12 +147,7 @@ class Carousel extends React.Component {
                 {technologies}
               </div>
               <div className={`${slide}`}>
-                <a href={currentProject.github}
-                  className={'py-2 mr-3 icon-active'}
-                  rel="noopener noreferrer"
-                  target="_blank">
-                  <i className="fab fa-github mr-2 icon-active"/>GitHub
-                </a>|
+                {checkGithub}
                 <a href={currentProject.live}
                   className={'py-2 ml-3 icon-active'}
                   rel="noopener noreferrer"

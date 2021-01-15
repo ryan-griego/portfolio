@@ -76,9 +76,10 @@ function AboutMe() {
                   <h3 className="heading mb-4 spread fade-in">About Me</h3>
                 </div>
                 <div className="slide-in-10">
-                  <p>I&#39;m Ryan Griego, and I&#39;m a Software Engineer that has a passion for technology, coding, and a great cup of coffee.</p>
-                  <p>I&#39;m skilled in languages such as JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, HTML, and CSS. I&#39;m intimately familiar with tools like Git/GitHub, Postman, npm, and Webpack.</p>
-                  <p>What got me interested in coding initially was the ability to build cool things, but what keeps me going is that I can create software from nothing that solves real problems.</p>
+                  <p>Hi! I&#39;m Ryan and I’m a web developer who loves solving problems and instructing computers do things that matter. My philosophy is simple: “details, details, details… Take the time to attend to every detail.”</p>
+                  <p>I’ve been working professionally in the industry since 2014 and have skills in the following languages JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, HTML, and CSS. I also make use of tools such as Git/GitHub, Postman, npm, and Webpack.</p>
+                  <p>This website is built with React JS and was coded with Visual Studio Code, my editor of choice.</p>
+                  <br></br>
                 </div>
               </div>
             </div>

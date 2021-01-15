@@ -20,7 +20,7 @@ class Applications extends React.Component {
           image: '/images/saferacks.jpg',
           alt: 'SafeRacks Thumbnail',
           name: 'SafeRacks',
-          technologies: ['Wordpress', 'Bootstrap', 'HTML', 'CSS'],
+          technologies: ['Wordpress', 'Javascript', 'Bootstrap', 'HTML', 'CSS'],
           description: 'Redesigned online store selling various garage storage products.',
           github: 'none',
           live: 'https://www.saferacks.com/'
@@ -30,7 +30,7 @@ class Applications extends React.Component {
           image: '/images/monsterrax.jpg',
           alt: 'Monsterrax Thumbnail',
           name: 'Monsterrax',
-          technologies: ['Wordpress', 'Bootstrap', 'HTML', 'CSS'],
+          technologies: ['Wordpress', 'Javascript', 'Bootstrap', 'HTML', 'CSS'],
           description: 'A Redesigned online store selling various garage storage products.',
           github: 'none',
           live: 'https://www.Monsterrax.com/'
@@ -51,7 +51,7 @@ class Applications extends React.Component {
           alt: 'GameKnight Project Thumbnail',
           name: 'GameKnight',
           technologies: ['React.js', 'Node.js', 'Express', 'PostgreSQL', 'HTML', 'CSS'],
-          description: 'A full-stack React shopping cart app developed for board game lovers to buy their games.',
+          description: 'A full-stack React shopping cart app developed for board gamers to buy more games.',
           github: 'https://github.com/ryan-griego/gameknight',
           live: 'https://gameknight.ryangriego.com/'
         },
