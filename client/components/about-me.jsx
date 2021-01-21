@@ -57,7 +57,7 @@ function AboutMe() {
                   <i className="far fa-envelope small-font m-auto" />
                 </div>
               </a>
-              <a href="/assets/Ryan_Griego.pdf"
+              <a href="/assets/ryan_griego_resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-general pointer"
@@ -76,7 +76,7 @@ function AboutMe() {
                   <h3 className="heading mb-4 spread fade-in">About Me</h3>
                 </div>
                 <div className="slide-in-10">
-                  <p>Hi! I&#39;m Ryan and I’m a web developer who loves solving problems and instructing computers do things that matter. My philosophy is simple: “details, details, details… Take the time to attend to every detail.”</p>
+                  <p>Hi! I&#39;m Ryan and I’m a web developer who loves solving problems and instructing computers to do things that make a tremendous impact. My philosophy is simple: “details, details, details… Take the time to attend to every detail.”</p>
                   <p>I’ve been working professionally in the industry since 2014 and have skills in the following languages JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, HTML, and CSS. I also make use of tools such as Git/GitHub, Postman, npm, and Webpack.</p>
                   <p>This website is built with React JS and was coded with Visual Studio Code, my editor of choice.</p>
                   <br></br>
