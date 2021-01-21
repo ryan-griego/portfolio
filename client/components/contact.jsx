@@ -74,7 +74,7 @@ function Contact(props) {
                   <i className="fab fa-linkedin medium-font m-auto" />
                 </div>
               </a>
-              <a href="/assets/ryan_griego.pdf"
+              <a href="/assets/ryan_griego_resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-color contact-general pointer m-auto"
