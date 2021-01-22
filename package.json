@@ -7,7 +7,7 @@
     "build": "webpack --mode=production",
     "dev": "npm-run-all --silent --parallel dev:*",
     "dev:client": "webpack-dev-server",
-    "start": "NODE_ENV=production node server/index.js"
+    "start": "NODE_ENV=production node server/public/index.js"
 
   },
   "husky": {
