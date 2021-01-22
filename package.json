@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "npm-run-all --silent --parallel dev:*",
-    "dev:client": "webpack-dev-server"
+    "dev:client": "webpack-dev-server",
+    "start": "NODE_ENV=production node server/index.js"
+
   },
   "husky": {
     "hooks": {
