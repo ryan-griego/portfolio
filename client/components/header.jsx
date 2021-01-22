@@ -51,7 +51,7 @@ class Header extends React.Component {
               <img
                 src="./images/portfolio-ryan-logo.png"
                 className="img-fluid header-logo"
-                alt="K/A - Kevin Akahoshi" />
+                alt="R/G - Ryan Griego" />
             </NavbarBrand>
             <NavbarToggler onClick={this.handleToggle} navbar="true" />
             <Collapse isOpen={this.state.isOpen} navbar>
