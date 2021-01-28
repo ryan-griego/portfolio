@@ -11,7 +11,7 @@ function AboutMe() {
     <div className="bg-light about-section content-div" id="about">
       <Container className="container-md">
         <Row>
-          <Col md="4">
+          <Col md="5">
             <h3 className="heading mb-4 spread d-block d-sm-none text-center fade-in slide-in-10">About Me</h3>
             <LazyLoad
               debounce={false}
@@ -69,7 +69,7 @@ function AboutMe() {
               </a>
             </div>
           </Col>
-          <Col md="8">
+          <Col md="6 ml-4">
             <div className="d-flex h-100">
               <div className="m-auto">
                 <div className="position-relative d-none d-sm-block slide-in-10">
