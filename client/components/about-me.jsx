@@ -16,7 +16,7 @@ function AboutMe() {
             <LazyLoad
               debounce={false}
               offsetVertical={500}>
-              <img src="images/me-plant.png"
+              <img src="images/ryan-hero.jpg"
                 className="img-fluid fade-in slide-in-10"
                 alt="Portrait photo of Ryan Griego with red/orange gradient of topographic pattern in the background" />
             </LazyLoad>
