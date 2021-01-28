@@ -293,7 +293,7 @@ a.decoration-none:hover::after {
 }
 
 .topographic-2 {
-  background-image: linear-gradient(-45deg, #1a9ba2ef, #18b082ef), url('./images/Topographic-Map-Pattern-5.png');
+  background-image: linear-gradient(-45deg, #1a9ba2ab, #18b082c4), url('./images/wood-pattern-trial.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
