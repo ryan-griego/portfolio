@@ -42,7 +42,7 @@ function Contact(props) {
               </a>
             </p>
             <p className="text-center mb-md-0 mx-4">
-              <a href="tel:+19492027141"
+              <a href="tel:+19493108534"
                 className="pointer pb-2 default-nav p-0">
                 <i className="fas fa-phone-alt mr-2" />949-310-8534
               </a>
