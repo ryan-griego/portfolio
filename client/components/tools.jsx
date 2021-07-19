@@ -6,6 +6,8 @@ import {
 } from 'reactstrap';
 import InfoCard from './info-card';
 
+
+
 function Tools() {
   const tools = [
     {
@@ -76,7 +78,9 @@ function Tools() {
               <h3 className="text-center heading mb-4 text-white spread slide-in">Tools</h3>
             </div>
           </Col>
+
           {toolCards}
+
         </Row>
       </Container>
     </div>

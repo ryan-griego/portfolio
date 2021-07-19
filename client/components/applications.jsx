@@ -7,6 +7,11 @@ import {
 import Carousel from './applications-carousel';
 import Grid from './applications-grid';
 import ToggleSwitch from './toggle-switch';
+import { Controls, PlayState, Tween } from 'react-gsap';
+
+
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+// gsap.registerPlugin(ScrollTrigger);
 
 class Applications extends React.Component {
   constructor() {
@@ -96,7 +101,22 @@ class Applications extends React.Component {
         <Container>
           <Row>
             <Col xs="12">
-              <h3 className="text-center heading mb-4 spread slide-in-10">Websites</h3>
+              <Tween
+                to={{
+                  x: '30px',
+                  opacity:1,
+                  scrollTrigger: {
+                    trigger: '.websites',
+                    start: '-0px center',
+                    end: '0px center',
+                    scrub: 0.5,
+                    markers: true,
+
+                  },
+                }}
+              >
+                <h3 className="text-center heading mb-4 spread websites" style={{ width: '100px', height: '100px', background: '#ccc' ,opacity: 0   }}>Websites</h3>
+                </Tween>
               <ToggleSwitch setView={this.setView}
                 toggleView={this.toggleView}
                 toggleTooltip={this.toggleTooltip}

@@ -12,6 +12,16 @@ import {
   Link,
   animateScroll as scroll
 } from 'react-scroll';
+import { Controls, PlayState, Tween, SplitChars } from 'react-gsap';
+
+
+const NavItemRef = React.forwardRef((props, ref) => (
+  <NavItem ref={ref} className="ml-md-5">
+
+  </NavItem>
+));
+
+const ref = React.createRef();
 
 class Header extends React.Component {
   constructor(props) {
@@ -38,6 +48,7 @@ class Header extends React.Component {
     return (
       <>
         <Container fluid={true} className="py-3 shadow-lg bg-white sticky-top">
+
           <Navbar color="faded" light
             expand="md"
             className="row py-0">
@@ -48,15 +59,19 @@ class Header extends React.Component {
               }
             }}
             className="pointer decoration-none">
-              <img
-                src="./images/portfolio-ryan-logo.png"
-                className="img-fluid header-logo"
-                alt="R/G - Ryan Griego" />
+              <Tween from={{ x: '-200px' }} duration={2}>
+                <img
+                  src="./images/portfolio-ryan-logo.png"
+                  className="img-fluid header-logo"
+                  alt="R/G - Ryan Griego" />
+              </Tween>
+
+
             </NavbarBrand>
             <NavbarToggler onClick={this.handleToggle} navbar="true" />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
-                <NavItem>
+                <NavItem ref={ref}>
                   <Link activeClass="active"
                     to="about"
                     spy={true}
