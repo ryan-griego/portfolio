@@ -7,7 +7,6 @@ import {
 import LazyLoad from 'react-lazy-load';
 import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
 
-
 function AboutMe() {
   return (
     <div className="bg-light about-section content-div" id="about">
@@ -15,8 +14,7 @@ function AboutMe() {
         <Row>
           <Col md="5">
 
-                <h3 className="heading mb-4 spread d-block d-sm-none text-center">About Me</h3>
-
+            <h3 className="heading mb-4 spread d-block d-sm-none text-center">About Me</h3>
 
             <Reveal repeat>
               <Tween
@@ -27,56 +25,55 @@ function AboutMe() {
                   className="img-fluid"
                   alt="Portrait photo of Ryan Griego with red/orange gradient of topographic pattern in the background" />
 
+                <div className="my-3 d-flex justify-content-center">
+                  <a href="https://github.com/ryan-griego/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="decoration-none default-nav contact-github pointer mr-2"
+                    aria-label="Github">
+                    <div className="border-div-small d-flex">
+                      <i className="fab fa-github small-font m-auto" />
+                    </div>
+                  </a>
+                  <a href="https://www.linkedin.com/in/ryan-griego-2134a340/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="decoration-none default-nav contact-linkedin pointer mr-2"
+                    aria-label="LinkedIn">
+                    <div className="border-div-small d-flex">
+                      <i className="fab fa-linkedin small-font m-auto" />
+                    </div>
+                  </a>
+                  <a href="tel:+19493108534"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="decoration-none default-nav contact-general pointer mr-2"
+                    aria-label="Phone">
+                    <div className="border-div-small d-flex">
+                      <i className="fas fa-phone-alt small-font m-auto" />
+                    </div>
+                  </a>
+                  <a href="mailto:ryangriego@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="decoration-none default-nav contact-general pointer mr-2"
+                    aria-label="Email">
+                    <div className="border-div-small d-flex">
+                      <i className="far fa-envelope small-font m-auto" />
+                    </div>
+                  </a>
+                  <a href="/assets/ryan_griego_resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="decoration-none default-nav contact-general pointer"
+                    aria-label="Resume Download"
+                    download>
+                    <div className="border-div-small d-flex">
+                      <i className="far fa-file-alt small-font m-auto" />
+                    </div>
+                  </a>
 
-            <div className="my-3 d-flex justify-content-center">
-              <a href="https://github.com/ryan-griego/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="decoration-none default-nav contact-github pointer mr-2"
-                aria-label="Github">
-                <div className="border-div-small d-flex">
-                  <i className="fab fa-github small-font m-auto" />
                 </div>
-              </a>
-              <a href="https://www.linkedin.com/in/ryan-griego-2134a340/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="decoration-none default-nav contact-linkedin pointer mr-2"
-                aria-label="LinkedIn">
-                <div className="border-div-small d-flex">
-                  <i className="fab fa-linkedin small-font m-auto" />
-                </div>
-              </a>
-              <a href="tel:+19493108534"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="decoration-none default-nav contact-general pointer mr-2"
-                aria-label="Phone">
-                <div className="border-div-small d-flex">
-                  <i className="fas fa-phone-alt small-font m-auto" />
-                </div>
-              </a>
-              <a href="mailto:ryangriego@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="decoration-none default-nav contact-general pointer mr-2"
-                aria-label="Email">
-                <div className="border-div-small d-flex">
-                  <i className="far fa-envelope small-font m-auto" />
-                </div>
-              </a>
-              <a href="/assets/ryan_griego_resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="decoration-none default-nav contact-general pointer"
-                aria-label="Resume Download"
-                download>
-                <div className="border-div-small d-flex">
-                  <i className="far fa-file-alt small-font m-auto" />
-                </div>
-              </a>
-
-            </div>
               </Tween>
             </Reveal>
           </Col>

@@ -103,8 +103,8 @@ class Applications extends React.Component {
 
               <Reveal repeat>
                 <Tween
-                from={{ opacity: 0, x: '-100px' }} duration={.5}
-                to={{ opacity: 1, x: '0px' }} duration={.5}
+                  from={{ opacity: 0, x: '-100px' }} duration={0.5}
+                  to={{ opacity: 1, x: '0px' }} duration={0.5}
                 >
                   <h3>Websites</h3>
                 </Tween>
@@ -116,7 +116,7 @@ class Applications extends React.Component {
                 tooltipOpen={this.state.tooltipOpen}
                 iconView={this.state.iconView}
                 view={this.state.view}
-                />
+              />
 
               {this.state.view === 'carousel'
                 ? <Carousel projects={this.state.projects} />

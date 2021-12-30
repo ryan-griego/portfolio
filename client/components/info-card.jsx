@@ -7,7 +7,6 @@ import {
 import LazyLoad from 'react-lazy-load';
 import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
 
-
 function InfoCard(props) {
   return (
     <Col lg="3"
@@ -15,12 +14,12 @@ function InfoCard(props) {
       sm="6"
       className="p-sm-3 mobile-six-card">
 
-          <Card className={`h-100 skills-card ${props.classes}`}>
-            <CardBody>
+      <Card className={`h-100 skills-card ${props.classes}`}>
+        <CardBody>
           <Reveal repeat>
             <Tween
-              from={{ opacity: 0, y: '50px' }} duration={.5}
-              to={{ opacity: 1, y: '0px' }} duration={.5}
+              from={{ opacity: 0, y: '50px' }} duration={0.5}
+              to={{ opacity: 1, y: '0px' }} duration={0.5}
             >
 
               <img alt="JavaScript Icon"
@@ -32,9 +31,8 @@ function InfoCard(props) {
               </div>
             </Tween>
           </Reveal>
-            </CardBody>
-          </Card>
-
+        </CardBody>
+      </Card>
 
     </Col>
   );

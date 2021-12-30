@@ -6,7 +6,6 @@ import {
 } from 'reactstrap';
 import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
 
-
 function BlankCard(props) {
   return (
     <Card className="h-100 rounded border d-none d-lg-flex"
@@ -52,12 +51,12 @@ function BlankCard(props) {
         <Reveal repeat>
           <Tween
             from={{ y: '100px' }} duration={1}
-            to={{y: '0px' }} duration={1}
+            to={{ y: '0px' }} duration={1}
           >
-        <a className="btn btn-share default-nav decoration-none disabled disabled-opacity mr-3">
-          <i className="fab fa-github mr-2" />GitHub</a>
-        <a className="btn btn-share default-nav decoration-none disabled disabled-opacity">
-          <i className="far fa-window-restore mr-2" />Live</a>
+            <a className="btn btn-share default-nav decoration-none disabled disabled-opacity mr-3">
+              <i className="fab fa-github mr-2" />GitHub</a>
+            <a className="btn btn-share default-nav decoration-none disabled disabled-opacity">
+              <i className="far fa-window-restore mr-2" />Live</a>
           </Tween>
         </Reveal>
       </CardFooter>

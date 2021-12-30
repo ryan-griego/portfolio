@@ -17,7 +17,7 @@ function Hero() {
           <Col md="6"
             className="d-flex order-1 order-sm-1"> */}
 
-            {/* <Tween from={{ y: '400px' }} duration={2}>
+        {/* <Tween from={{ y: '400px' }} duration={2}>
               <div className="m-auto">
 
                 <h1 className="spread">Ryan Griego</h1>
@@ -25,7 +25,7 @@ function Hero() {
 
               </div>
             </Tween> */}
-{/*
+        {/*
             <Tween
             from={{ x: '-700px', y: '-600px', delay: 1.5, opacity: 0}} stagger={0.1}
             to={{ x: '0px', y: '0px', delay: 1.5, opacity: 1}} stagger={0.1}
@@ -38,7 +38,6 @@ function Hero() {
               Ryan&nbsp;Griego
               </SplitChars>
 
-
             </Tween>
 
               </Col>
@@ -48,34 +47,33 @@ function Hero() {
           <Col md="6"
             className="d-flex order-1 order-sm-1">
             <Row className="m-auto">
-            <Tween
-            from={{ x: '-900px', y: '-800px', delay: 1.5, opacity: 0 }} stagger={0.1}
-              to={{ x: '0px', y: '0px', delay: 1.5, opacity: 1 }} stagger={0.1}
-            >
-
-              <SplitChars
-                wrapper={<h1 style={{ fontSize: '70px' }} className="h1" />}
-              >
-                Ryan&nbsp;Griego
-              </SplitChars>
-
-            </Tween>
-
-
-              <Col md="6"
-                className="d-flex order-2 order-sm-2" style={{ padding: 0 }}>
               <Tween
-                from={{ x: '-900px', y: '-800px', delay: 2.75, opacity: 0 }} stagger={0.1}
-                to={{ x: '0px', y: '0px', delay: 2.75, opacity: 1 }} stagger={0.1}
+                from={{ x: '-900px', y: '-800px', delay: 1.5, opacity: 0 }} stagger={0.1}
+                to={{ x: '0px', y: '0px', delay: 1.5, opacity: 1 }} stagger={0.1}
               >
 
                 <SplitChars
-                  wrapper={<h1 style={{ fontSize: '40px' }} className="text-muted h3" />}
+                  wrapper={<h1 style={{ fontSize: '70px' }} className="h1" />}
                 >
-                  Web&nbsp;Developer
+                Ryan&nbsp;Griego
                 </SplitChars>
 
               </Tween>
+
+              <Col md="6"
+                className="d-flex order-2 order-sm-2" style={{ padding: 0 }}>
+                <Tween
+                  from={{ x: '-900px', y: '-800px', delay: 2.75, opacity: 0 }} stagger={0.1}
+                  to={{ x: '0px', y: '0px', delay: 2.75, opacity: 1 }} stagger={0.1}
+                >
+
+                  <SplitChars
+                    wrapper={<h1 style={{ fontSize: '40px' }} className="text-muted h3" />}
+                  >
+                  Web&nbsp;Developer
+                  </SplitChars>
+
+                </Tween>
               </Col>
             </Row>
           </Col>
@@ -83,8 +81,8 @@ function Hero() {
           <Col md="6"
             className="p-0 pt-4 order-3 order-sm-3">
             <Tween
-            from={{ x: '100%', delay: 1.5, opacity: 0 }} duration={.5}
-           to={{ opacity: 1, delay: 1.5, x: '0px' }} duration={1}
+              from={{ x: '100%', delay: 1.5, opacity: 0 }} duration={0.5}
+              to={{ opacity: 1, delay: 1.5, x: '0px' }} duration={1}
             >
               <img
                 src="/images/ryan-phones.jpg"
