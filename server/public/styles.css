@@ -29,6 +29,10 @@ body {
   width: 100%;
 }
 
+.hero-name {
+  font-size: 70px;
+}
+
 .applications-section {
   min-height: 90vh;
 }
@@ -376,15 +380,21 @@ a.decoration-none:hover::after {
   border-radius: 6px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hero-graphic {
     min-height: 50vh;
+  }
+  .hero-name {
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 575px) {
   .mobile-six-row {
     justify-content: space-evenly;
+  }
+  .hero-name {
+    font-size: 3rem;
   }
 
   .mobile-six-card {

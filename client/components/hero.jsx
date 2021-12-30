@@ -53,7 +53,7 @@ function Hero() {
               >
 
                 <SplitChars
-                  wrapper={<h1 style={{ fontSize: '70px' }} className="h1" />}
+                  wrapper={<h1 className="h1 hero-name" />}
                 >
                 Ryan&nbsp;Griego
                 </SplitChars>
