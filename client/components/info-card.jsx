@@ -5,6 +5,8 @@ import {
   CardBody
 } from 'reactstrap';
 import LazyLoad from 'react-lazy-load';
+import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
+
 
 function InfoCard(props) {
   return (
@@ -12,21 +14,28 @@ function InfoCard(props) {
       md="4"
       sm="6"
       className="p-sm-3 mobile-six-card">
-      <Card className={`h-100 skills-card slide-in-10 ${props.classes}`}>
-        <CardBody>
-          <LazyLoad
-            debounce={false}
-            height={96}
-            offsetVertical={350}>
-            <img alt="JavaScript Icon"
-              src={props.logo}
-              className="icon-svg d-block m-auto" />
-          </LazyLoad>
-          <div className="my-3">
-            <h4 className="text-center h5">{props.name}</h4>
-          </div>
-        </CardBody>
-      </Card>
+
+          <Card className={`h-100 skills-card ${props.classes}`}>
+            <CardBody>
+          <Reveal repeat>
+            <Tween
+              from={{ opacity: 0, y: '50px' }} duration={.5}
+              to={{ opacity: 1, y: '0px' }} duration={.5}
+            >
+
+              <img alt="JavaScript Icon"
+                src={props.logo}
+                className="icon-svg d-block m-auto" />
+
+              <div className="my-3">
+                <h4 className="text-center h5">{props.name}</h4>
+              </div>
+            </Tween>
+          </Reveal>
+            </CardBody>
+          </Card>
+
+
     </Col>
   );
 }

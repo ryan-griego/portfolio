@@ -5,6 +5,7 @@ import {
   Col
 } from 'reactstrap';
 import LazyLoad from 'react-lazy-load';
+import { Controls, PlayState, Tween, SplitChars } from 'react-gsap';
 
 function Hero() {
   return (
@@ -12,24 +13,84 @@ function Hero() {
       <Container
         className="m-auto"
         fluid>
-        <Row>
+        {/* <Row className="m-auto">
           <Col md="6"
-            className="d-flex order-2 order-sm-1">
-            <div className="m-auto">
-              <h1 className="spread fade-in slide-in-10">Ryan Griego</h1>
-              <h2 className="text-muted h3 fade-in slide-in-10">Web Developer</h2>
-            </div>
+            className="d-flex order-1 order-sm-1"> */}
+
+            {/* <Tween from={{ y: '400px' }} duration={2}>
+              <div className="m-auto">
+
+                <h1 className="spread">Ryan Griego</h1>
+                <h2 className="text-muted h3">Web Developer</h2>
+
+              </div>
+            </Tween> */}
+{/*
+            <Tween
+            from={{ x: '-700px', y: '-600px', delay: 1.5, opacity: 0}} stagger={0.1}
+            to={{ x: '0px', y: '0px', delay: 1.5, opacity: 1}} stagger={0.1}
+
+            >
+
+              <SplitChars
+                wrapper={<h1 style={{ fontSize: '60px' }} className="spread"/>}
+              >
+              Ryan&nbsp;Griego
+              </SplitChars>
+
+
+            </Tween>
+
+              </Col>
+            </Row> */}
+
+        <Row className="m-auto">
+          <Col md="6"
+            className="d-flex order-1 order-sm-1">
+            <Row className="m-auto">
+            <Tween
+            from={{ x: '-900px', y: '-800px', delay: 1.5, opacity: 0 }} stagger={0.1}
+              to={{ x: '0px', y: '0px', delay: 1.5, opacity: 1 }} stagger={0.1}
+            >
+
+              <SplitChars
+                wrapper={<h1 style={{ fontSize: '70px' }} className="h1" />}
+              >
+                Ryan&nbsp;Griego
+              </SplitChars>
+
+            </Tween>
+
+
+              <Col md="6"
+                className="d-flex order-2 order-sm-2" style={{ padding: 0 }}>
+              <Tween
+                from={{ x: '-900px', y: '-800px', delay: 2.75, opacity: 0 }} stagger={0.1}
+                to={{ x: '0px', y: '0px', delay: 2.75, opacity: 1 }} stagger={0.1}
+              >
+
+                <SplitChars
+                  wrapper={<h1 style={{ fontSize: '40px' }} className="text-muted h3" />}
+                >
+                  Web&nbsp;Developer
+                </SplitChars>
+
+              </Tween>
+              </Col>
+            </Row>
           </Col>
+
           <Col md="6"
-            className="p-0 order-1 order-sm-2">
-            <LazyLoad
-              debounce={false}
-              offsetVertical={350}>
+            className="p-0 pt-4 order-3 order-sm-3">
+            <Tween
+            from={{ x: '100%', delay: 1.5, opacity: 0 }} duration={.5}
+           to={{ opacity: 1, delay: 1.5, x: '0px' }} duration={1}
+            >
               <img
                 src="/images/ryan-phones.jpg"
-                className="hero-image fade-in slide-in-10"
+                className="hero-image"
                 alt="Mocks of the different apps made on mobile phones." />
-            </LazyLoad>
+            </Tween>
           </Col>
         </Row>
       </Container>
