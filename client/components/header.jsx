@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Container,
   Collapse,
@@ -6,7 +6,9 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem
+  NavItem,
+  Card,
+  Fade
 } from 'reactstrap';
 import {
   Link,
@@ -15,11 +17,7 @@ import {
 import { Controls, PlayState, Tween, SplitChars } from 'react-gsap';
 
 
-const NavItemRef = React.forwardRef((props, ref) => (
-  <NavItem ref={ref} className="ml-md-5">
 
-  </NavItem>
-));
 
 const ref = React.createRef();
 
@@ -45,13 +43,14 @@ class Header extends React.Component {
       offset = -286;
     }
 
+
     return (
       <>
         <Container fluid={true} className="py-3 shadow-lg bg-white sticky-top">
-
           <Navbar color="faded" light
             expand="md"
             className="row py-0">
+
             <NavbarBrand onClick={() => {
               scroll.scrollToTop();
               if (this.state.isOpen) {
@@ -59,7 +58,8 @@ class Header extends React.Component {
               }
             }}
             className="pointer decoration-none">
-              <Tween from={{ x: '-200px' }} duration={2}>
+              <Tween from={{ x: '-300px' }} duration={1}>
+
                 <img
                   src="./images/portfolio-ryan-logo.png"
                   className="img-fluid header-logo"
@@ -68,10 +68,16 @@ class Header extends React.Component {
 
 
             </NavbarBrand>
+
             <NavbarToggler onClick={this.handleToggle} navbar="true" />
+
             <Collapse isOpen={this.state.isOpen} navbar>
+              <Tween
+                from={{ y: '-100%', delay: 1 }} duration={.3}
+              >
+                <div style={{ marginLeft: 'auto' }}>
               <Nav className="ml-auto" navbar>
-                <NavItem ref={ref}>
+                <NavItem>
                   <Link activeClass="active"
                     to="about"
                     spy={true}
@@ -132,8 +138,13 @@ class Header extends React.Component {
                   </Link>
                 </NavItem>
               </Nav>
+                </div>
+              </Tween>
             </Collapse>
+
+
           </Navbar>
+
         </Container>
       </>
     );

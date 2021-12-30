@@ -3,15 +3,19 @@ import {
   Row,
   Col
 } from 'reactstrap';
+import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
+
 import ProjectCard from './project-card';
 import BlankCard from './blank-card';
 
 function Grid(props) {
   return (
+
     <Row
       className="row-cols-1 row-cols-md-2 row-cols-lg-3">
       {getProjects(props.projects)}
     </Row>
+
   );
 }
 
@@ -22,6 +26,7 @@ function getProjects(projectsArray) {
   return projectsArray.map((project, index) => {
     delay += 100;
     return (
+
       <Col key={index}
         className="mb-4">
         {project.description

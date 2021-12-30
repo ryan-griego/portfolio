@@ -4,21 +4,33 @@ import {
   CardBody,
   CardFooter
 } from 'reactstrap';
+import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
+
 
 function ProjectCard(props) {
 
-  let gitHubLink = <a className="btn btn-share default-nav decoration-none fade-in slide-in ml-3"
+  let gitHubLink = <Reveal repeat>
+    <Tween
+      from={{ opacity: 0, y: '50px' }} duration={1}
+      to={{ opacity: 1, y: '0px' }} duration={1}
+    ><a className="btn btn-share default-nav decoration-none ml-3"
     target="_blank"
     rel="noopener noreferrer"
     href={props.project.github}>
-    <i className="fab fa-github mr-2" />GitHub</a>;
+        <i className="fab fa-github mr-2" />GitHub</a></Tween>
+  </Reveal>;
 
   let checkGithub = props.project.github === 'none' ? '' : gitHubLink;
   return (
-    <Card className="h-100 item rounded border slide-in-10"
-      style={{ animationDelay: props.delay + 'ms' }}>
+
+    <Card className="h-100 item rounded border">
       <CardBody
         className="p-3">
+        <Reveal repeat>
+          <Tween
+            from={{ opacity: 0, y: '50px' }} duration={1}
+            to={{ opacity: 1, y: '0px' }} duration={1}
+          >
         <a href={props.project.live}
           target="_blank"
           rel="noopener noreferrer"
@@ -27,26 +39,39 @@ function ProjectCard(props) {
             className="img-fluid border rounded"
             alt={props.project.alt} />
         </a>
-        <h5 className="text-center my-3">
-          {props.project.name}
-        </h5>
-        <p className="mb-3">
-          {props.truncateDescription(props.project.description, props.project.name)}
-        </p>
-        <h6 className="text-center mb-3">Developed Using</h6>
-        <div className="d-flex align-content-start flex-wrap w-100">
-          {props.getTechnologies(props.project.technologies)}
-        </div>
+
+            <h5 className="text-center my-3">
+              {props.project.name}
+            </h5>
+            <p className="mb-3">
+              {props.truncateDescription(props.project.description, props.project.name)}
+            </p>
+            <h6 className="text-center mb-3">Developed Using</h6>
+            <div className="d-flex align-content-start flex-wrap w-100">
+              {props.getTechnologies(props.project.technologies)}
+            </div>
+          </Tween>
+        </Reveal>
+
       </CardBody>
       <CardFooter className="bg-white p-3">
-        <a className="btn btn-share default-nav decoration-none fade-in slide-in"
+        <Reveal repeat>
+          <Tween
+            from={{ opacity: 0, y: '50px' }} duration={1}
+            to={{ opacity: 1, y: '0px' }} duration={1}
+          >
+        <a className="btn btn-share default-nav decoration-none"
           target="_blank"
           rel="noopener noreferrer"
           href={props.project.live}>
           <i className="far fa-window-restore mr-2" />Live</a>
+          </Tween>
+        </Reveal>
         {checkGithub}
+
       </CardFooter>
     </Card>
+
   );
 }
 

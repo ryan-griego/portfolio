@@ -5,6 +5,8 @@ import {
   Col
 } from 'reactstrap';
 import InfoCard from './info-card';
+import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
+
 
 function Skills() {
   const skills = [
@@ -60,26 +62,38 @@ function Skills() {
 
   const skillCards = skills.map((skill, index) => {
     return (
-      <InfoCard key={index}
-        logo={skill.logo}
-        name={skill.name} />
+
+          <InfoCard key={index}
+            logo={skill.logo}
+            name={skill.name} />
+
+
     );
   });
 
   return (
+
     <div className="skills-section topographic content-div position-relative"
       id="skills">
       <Container>
         <Row className="mobile-six-row">
           <Col xs="12">
+            <Reveal repeat>
+              <Tween
+                from={{ opacity: 0, y: '50px' }} duration={1}
+                to={{ opacity: 1, y: '0px' }} duration={1}
+              >
             <div className="heading-div position-relative m-auto">
-              <h3 className="text-center heading mb-4 spread slide-in">Technical Skills</h3>
+                  <h3 className="text-center heading mb-4 spread">Technical Skills</h3>
             </div>
+              </Tween>
+            </Reveal>
           </Col>
           {skillCards}
         </Row>
       </Container>
     </div>
+
   );
 }
 

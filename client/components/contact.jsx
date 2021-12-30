@@ -5,6 +5,8 @@ import {
   Col
 } from 'reactstrap';
 import LazyLoad from 'react-lazy-load';
+import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
+
 
 function Contact(props) {
   return (
@@ -12,27 +14,54 @@ function Contact(props) {
       <Container className="m-auto">
         <Row>
           <Col sm="4" className="d-none d-sm-block">
-            <div className="h-100 d-flex">
-              <hr className="m-auto w-100" />
-            </div>
+
+                <div className="h-100 d-flex">
+              <Reveal repeat>
+                <Tween
+                  from={{ opacity: 0, y: '100px' }} duration={1}
+                  to={{ opacity: 1, y: '0px' }} duration={1}
+                >
+                  <hr className="m-auto w-100" />
+                </Tween>
+              </Reveal>
+                </div>
+
+
           </Col>
           <Col sm="4">
-            <LazyLoad
-              debounce={false}
-              offsetVertical={350}>
+
+              <Reveal repeat>
+                <Tween
+                  from={{ opacity: 0, y: '100px' }} duration={1}
+                  to={{ opacity: 1, y: '0px' }} duration={1}
+                >
               <img src="./images/portfolio-ryan-logo.png"
                 className="img-fluid footer-logo fade-in"
                 alt="Ryan Griego" />
-            </LazyLoad>
+                </Tween>
+              </Reveal>
+
           </Col>
           <Col sm="4" className="d-none d-sm-block">
             <div className="h-100 d-flex">
+              <Reveal repeat>
+                <Tween
+                  from={{ opacity: 0, y: '100px' }} duration={1}
+                  to={{ opacity: 1, y: '0px' }} duration={1}
+                >
               <hr className="m-auto w-100" />
+                </Tween>
+              </Reveal>
             </div>
           </Col>
         </Row>
         <div className="my-4">
           <Row className="justify-content-center">
+            <Reveal repeat>
+              <Tween
+                from={{ opacity: 0, y: '100px' }} duration={1}
+                to={{ opacity: 1, y: '0px' }} duration={1}
+              >
             <p className="text-center mb-md-0 mx-4">
               <a href="https://www.google.com/maps/place/Orange+County,+CA/@33.6410077,-118.0496294,10z/data=!3m1!4b1!4m5!3m4!1s0x80dc925c54d5f7cf:0xdea6c3618ff0d607!8m2!3d33.7174708!4d-117.8311428"
                 className="pointer pb-2 default-nav p-0"
@@ -53,8 +82,15 @@ function Contact(props) {
                 <i className="fas fa-envelope mr-2" />ryangriego@gmail.com
               </a>
             </p>
+              </Tween>
+            </Reveal>
           </Row>
           <Row className="justify-content-center">
+            <Reveal repeat>
+              <Tween
+                from={{ opacity: 0, y: '100px' }} duration={1}
+                to={{ opacity: 1, y: '0px' }} duration={1}
+              >
             <div className="mt-5 d-flex">
               <a href="https://github.com/ryan-griego/"
                 target="_blank"
@@ -85,9 +121,18 @@ function Contact(props) {
                 </div>
               </a>
             </div>
+              </Tween>
+            </Reveal>
           </Row>
         </div>
+        <Reveal repeat>
+          <Tween
+            from={{ opacity: 0, y: '100px' }} duration={1}
+            to={{ opacity: 1, y: '0px' }} duration={1}
+          >
         <p className="mb-0 text-center h6">&copy; Ryan Griego {props.year}</p>
+          </Tween>
+        </Reveal>
       </Container>
     </div>
   );

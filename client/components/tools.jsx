@@ -5,7 +5,7 @@ import {
   Col
 } from 'reactstrap';
 import InfoCard from './info-card';
-
+import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
 
 
 function Tools() {
@@ -75,12 +75,17 @@ function Tools() {
         <Row className="mobile-six-row">
           <Col xs="12">
             <div className="heading-div position-relative m-auto">
-              <h3 className="text-center heading mb-4 text-white spread slide-in">Tools</h3>
+              <Reveal repeat>
+                <Tween
+                  from={{ opacity: 0, x: '-50px' }} duration={1}
+                  to={{ opacity: 1, x: '0px' }} duration={1}
+                >
+                  <h3 className="text-center heading mb-4 text-white spread">Tools</h3>
+                </Tween>
+              </Reveal>
             </div>
           </Col>
-
           {toolCards}
-
         </Row>
       </Container>
     </div>

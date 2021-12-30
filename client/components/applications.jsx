@@ -7,8 +7,7 @@ import {
 import Carousel from './applications-carousel';
 import Grid from './applications-grid';
 import ToggleSwitch from './toggle-switch';
-import { Controls, PlayState, Tween } from 'react-gsap';
-
+import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
 
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 // gsap.registerPlugin(ScrollTrigger);
@@ -101,28 +100,24 @@ class Applications extends React.Component {
         <Container>
           <Row>
             <Col xs="12">
-              <Tween
-                to={{
-                  x: '30px',
-                  opacity:1,
-                  scrollTrigger: {
-                    trigger: '.websites',
-                    start: '-0px center',
-                    end: '0px center',
-                    scrub: 0.5,
-                    markers: true,
 
-                  },
-                }}
-              >
-                <h3 className="text-center heading mb-4 spread websites" style={{ width: '100px', height: '100px', background: '#ccc' ,opacity: 0   }}>Websites</h3>
+              <Reveal repeat>
+                <Tween
+                from={{ opacity: 0, x: '-100px' }} duration={.5}
+                to={{ opacity: 1, x: '0px' }} duration={.5}
+                >
+                  <h3>Websites</h3>
                 </Tween>
+              </Reveal>
+
               <ToggleSwitch setView={this.setView}
                 toggleView={this.toggleView}
                 toggleTooltip={this.toggleTooltip}
                 tooltipOpen={this.state.tooltipOpen}
                 iconView={this.state.iconView}
-                view={this.state.view} />
+                view={this.state.view}
+                />
+
               {this.state.view === 'carousel'
                 ? <Carousel projects={this.state.projects} />
                 : <Grid projects={this.state.projects}/>}
