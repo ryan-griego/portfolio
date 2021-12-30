@@ -7,7 +7,6 @@ import {
 import InfoCard from './info-card';
 import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
 
-
 function Skills() {
   const skills = [
     {
@@ -63,10 +62,9 @@ function Skills() {
   const skillCards = skills.map((skill, index) => {
     return (
 
-          <InfoCard key={index}
-            logo={skill.logo}
-            name={skill.name} />
-
+      <InfoCard key={index}
+        logo={skill.logo}
+        name={skill.name} />
 
     );
   });
@@ -83,9 +81,9 @@ function Skills() {
                 from={{ opacity: 0, y: '50px' }} duration={1}
                 to={{ opacity: 1, y: '0px' }} duration={1}
               >
-            <div className="heading-div position-relative m-auto">
+                <div className="heading-div position-relative m-auto">
                   <h3 className="text-center heading mb-4 spread">Technical Skills</h3>
-            </div>
+                </div>
               </Tween>
             </Reveal>
           </Col>

@@ -7,7 +7,6 @@ import {
 import InfoCard from './info-card';
 import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
 
-
 function Tools() {
   const tools = [
     {

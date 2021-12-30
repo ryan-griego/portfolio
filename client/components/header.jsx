@@ -16,9 +16,6 @@ import {
 } from 'react-scroll';
 import { Controls, PlayState, Tween, SplitChars } from 'react-gsap';
 
-
-
-
 const ref = React.createRef();
 
 class Header extends React.Component {
@@ -43,7 +40,6 @@ class Header extends React.Component {
       offset = -286;
     }
 
-
     return (
       <>
         <Container fluid={true} className="py-3 shadow-lg bg-white sticky-top">
@@ -66,82 +62,80 @@ class Header extends React.Component {
                   alt="R/G - Ryan Griego" />
               </Tween>
 
-
             </NavbarBrand>
 
             <NavbarToggler onClick={this.handleToggle} navbar="true" />
 
             <Collapse isOpen={this.state.isOpen} navbar>
               <Tween
-                from={{ y: '-100%', delay: 1 }} duration={.3}
+                from={{ y: '-100%', delay: 1 }} duration={0.3}
               >
                 <div style={{ marginLeft: 'auto' }}>
-              <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <Link activeClass="active"
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    offset={offset}
-                    duration={1000}
-                    className="pointer px-0 nav-link"
-                    onClick={this.handleToggle}>
+                  <Nav className="ml-auto" navbar>
+                    <NavItem>
+                      <Link activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={offset}
+                        duration={1000}
+                        className="pointer px-0 nav-link"
+                        onClick={this.handleToggle}>
                       About Me
-                  </Link>
-                </NavItem>
-                <NavItem className="ml-md-5">
-                  <Link activeClass="active"
-                    to="skills"
-                    spy={true}
-                    smooth={true}
-                    offset={offset}
-                    duration={1000}
-                    className="pointer px-0 nav-link"
-                    onClick={this.handleToggle}>
+                      </Link>
+                    </NavItem>
+                    <NavItem className="ml-md-5">
+                      <Link activeClass="active"
+                        to="skills"
+                        spy={true}
+                        smooth={true}
+                        offset={offset}
+                        duration={1000}
+                        className="pointer px-0 nav-link"
+                        onClick={this.handleToggle}>
                     Skills
-                  </Link>
-                </NavItem>
-                <NavItem className="ml-md-5">
-                  <Link activeClass="active"
-                    to="tools"
-                    spy={true}
-                    smooth={true}
-                    offset={offset}
-                    duration={1000}
-                    className="pointer px-0 nav-link"
-                    onClick={this.handleToggle}>
+                      </Link>
+                    </NavItem>
+                    <NavItem className="ml-md-5">
+                      <Link activeClass="active"
+                        to="tools"
+                        spy={true}
+                        smooth={true}
+                        offset={offset}
+                        duration={1000}
+                        className="pointer px-0 nav-link"
+                        onClick={this.handleToggle}>
                     Tools
-                  </Link>
-                </NavItem>
-                <NavItem className="ml-md-5">
-                  <Link activeClass="active"
-                    to="applications"
-                    spy={true}
-                    smooth={true}
-                    offset={offset}
-                    duration={1000}
-                    className="pointer px-0 nav-link"
-                    onClick={this.handleToggle}>
+                      </Link>
+                    </NavItem>
+                    <NavItem className="ml-md-5">
+                      <Link activeClass="active"
+                        to="applications"
+                        spy={true}
+                        smooth={true}
+                        offset={offset}
+                        duration={1000}
+                        className="pointer px-0 nav-link"
+                        onClick={this.handleToggle}>
                     Websites
-                  </Link>
-                </NavItem>
-                <NavItem className="ml-md-5">
-                  <Link activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={offset}
-                    duration={1000}
-                    className="pointer px-0 nav-link"
-                    onClick={this.handleToggle}>
+                      </Link>
+                    </NavItem>
+                    <NavItem className="ml-md-5">
+                      <Link activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={offset}
+                        duration={1000}
+                        className="pointer px-0 nav-link"
+                        onClick={this.handleToggle}>
                     Contact
-                  </Link>
-                </NavItem>
-              </Nav>
+                      </Link>
+                    </NavItem>
+                  </Nav>
                 </div>
               </Tween>
             </Collapse>
-
 
           </Navbar>
 

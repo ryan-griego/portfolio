@@ -6,21 +6,20 @@ import {
 } from 'reactstrap';
 import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
 
-
 function ProjectCard(props) {
 
-  let gitHubLink = <Reveal repeat>
+  const gitHubLink = <Reveal repeat>
     <Tween
       from={{ opacity: 0, y: '50px' }} duration={1}
       to={{ opacity: 1, y: '0px' }} duration={1}
     ><a className="btn btn-share default-nav decoration-none ml-3"
-    target="_blank"
-    rel="noopener noreferrer"
-    href={props.project.github}>
+        target="_blank"
+        rel="noopener noreferrer"
+        href={props.project.github}>
         <i className="fab fa-github mr-2" />GitHub</a></Tween>
   </Reveal>;
 
-  let checkGithub = props.project.github === 'none' ? '' : gitHubLink;
+  const checkGithub = props.project.github === 'none' ? '' : gitHubLink;
   return (
 
     <Card className="h-100 item rounded border">
@@ -31,14 +30,14 @@ function ProjectCard(props) {
             from={{ opacity: 0, y: '50px' }} duration={1}
             to={{ opacity: 1, y: '0px' }} duration={1}
           >
-        <a href={props.project.live}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="pointer decoration-none position-relative">
-          <img src={props.project.image}
-            className="img-fluid border rounded"
-            alt={props.project.alt} />
-        </a>
+            <a href={props.project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pointer decoration-none position-relative">
+              <img src={props.project.image}
+                className="img-fluid border rounded"
+                alt={props.project.alt} />
+            </a>
 
             <h5 className="text-center my-3">
               {props.project.name}
@@ -60,11 +59,11 @@ function ProjectCard(props) {
             from={{ opacity: 0, y: '50px' }} duration={1}
             to={{ opacity: 1, y: '0px' }} duration={1}
           >
-        <a className="btn btn-share default-nav decoration-none"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={props.project.live}>
-          <i className="far fa-window-restore mr-2" />Live</a>
+            <a className="btn btn-share default-nav decoration-none"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={props.project.live}>
+              <i className="far fa-window-restore mr-2" />Live</a>
           </Tween>
         </Reveal>
         {checkGithub}
