@@ -22,7 +22,9 @@ function InfoCard(props) {
               to={{ opacity: 1, y: '0px' }} duration={0.5}
             >
 
-              <img alt="JavaScript Icon"
+              <img
+                alt={props.tooltip}
+                title={props.tooltip}
                 src={props.logo}
                 className="icon-svg d-block m-auto" />
 

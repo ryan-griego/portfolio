@@ -11,51 +11,63 @@ function Tools() {
   const tools = [
     {
       name: 'GitHub',
-      logo: '/assets/icons/github.svg'
+      logo: '/assets/icons/github.svg',
+      tooltip: 'GitHub'
     },
     {
       name: 'AWS',
-      logo: '/assets/icons/aws.svg'
+      logo: '/assets/icons/aws.svg',
+      tooltip: 'AWS'
     },
     {
       name: 'npm',
-      logo: '/assets/icons/npm.svg'
+      logo: '/assets/icons/npm.svg',
+      tooltip: 'npm'
     },
     {
       name: 'Webpack',
-      logo: '/assets/icons/webpack.svg'
+      logo: '/assets/icons/webpack.svg',
+      tooltip: 'Webpack'
     },
     {
       name: 'Babel',
-      logo: '/assets/icons/babel.svg'
+      logo: '/assets/icons/babel.svg',
+      tooltip: 'Babel'
     },
     {
       name: 'Apache',
-      logo: '/assets/icons/apache.svg'
+      logo: '/assets/icons/apache.svg',
+      tooltip: 'Apache'
     },
     {
       name: 'Chrome Dev Tools',
-      logo: '/assets/icons/chrome-dev-tools.svg'
+      logo: '/assets/icons/chrome-dev-tools.svg',
+      tooltip: 'Chrome Dev Tools'
     },
     {
       name: 'Trello',
-      logo: '/assets/icons/trello.svg'
+      logo: '/assets/icons/trello.svg',
+      tooltip: 'Trello'
     },
     {
       name: 'VS Code',
-      logo: '/assets/icons/vs-code.svg'
+      logo: '/assets/icons/vs-code.svg',
+      tooltip: 'VS Code'
     },
     {
       name: 'Figma',
-      logo: '/assets/icons/figma.svg'
+      logo: '/assets/icons/figma.svg',
+      tooltip: 'Figma'
     },
     {
       name: 'Photoshop',
-      logo: '/assets/icons/photoshop.svg'
+      logo: '/assets/icons/photoshop.svg',
+      tooltip: 'Photoshop'
     },
     {
       name: 'Slack',
-      logo: '/assets/icons/slack.svg'
+      logo: '/assets/icons/slack.svg',
+      tooltip: 'Slack'
     }
   ];
 
@@ -64,6 +76,7 @@ function Tools() {
       <InfoCard key={index}
         logo={tool.logo}
         name={tool.name}
+        tooltip={tool.tooltip}
         classes={'shadow-none bg-transparent text-white'} />
     );
   });

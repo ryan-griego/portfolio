@@ -44,7 +44,7 @@ class Applications extends React.Component {
           image: '/images/booksforyourprofession.jpg',
           alt: 'Books For Your Profession Project Thumbnail',
           name: 'Books For Your Professsion',
-          technologies: ['React.js', 'PostgreSQL', 'Express', 'Google Books API', 'Bootstrap', 'HTML', 'CSS'],
+          technologies: ['React', 'PostgreSQL', 'Express', 'Google Books API', 'Bootstrap', 'HTML', 'CSS'],
           description: 'An app for professionals who want to find out the most recommended books for their profession.',
           github: 'https://github.com/ryan-griego/books-for-your-profession',
           live: 'https://booksforyourprofession.ryangriego.com/'
@@ -54,7 +54,7 @@ class Applications extends React.Component {
           image: '/images/gameknight.jpg',
           alt: 'GameKnight Project Thumbnail',
           name: 'GameKnight',
-          technologies: ['React.js', 'Node.js', 'Express', 'PostgreSQL', 'HTML', 'CSS'],
+          technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'HTML', 'CSS'],
           description: 'A full-stack React shopping cart app developed for board gamers to buy more games.',
           github: 'https://github.com/ryan-griego/gameknight',
           live: 'https://gameknight.ryangriego.com/'

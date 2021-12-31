@@ -25,7 +25,12 @@ function AboutMe() {
                   className="img-fluid"
                   alt="Portrait photo of Ryan Griego with red/orange gradient of topographic pattern in the background" />
 
+              </Tween>
+            </Reveal>
+
+            <Reveal repeat>
                 <div className="my-3 d-flex justify-content-center">
+                <Tween from={{ opacity: 0, y: '0px' }} to={{ opacity: 1, y: '-50px' }} stagger={0.2} ease="elastic.out(0.2, 0.1)" delay={.5}>
                   <a href="https://github.com/ryan-griego/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -72,10 +77,11 @@ function AboutMe() {
                       <i className="far fa-file-alt small-font m-auto" />
                     </div>
                   </a>
-
+                </Tween>
                 </div>
-              </Tween>
+
             </Reveal>
+
           </Col>
           <Col md="6 ml-4">
             <div className="d-flex h-100">
@@ -97,8 +103,8 @@ function AboutMe() {
                       to={{ opacity: 1, y: '0px' }} duration={1}
                     >
                       <p>Hi! I&#39;m Ryan and I’m a web developer who loves solving problems and instructing computers to do things that make a tremendous impact. My philosophy is simple: “details, details, details… Take the time to attend to every detail.”</p>
-                      <p>I’ve been working professionally in the industry since 2014 and have skills in the following languages JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, HTML, and CSS. I also make use of tools such as Git/GitHub, Postman, npm, and Webpack.</p>
-                      <p>This website is built with React JS and was coded with Visual Studio Code, my editor of choice.</p>
+                      <p>I’ve been working professionally in the industry since 2014 and have skills in the following languages JavaScript (ES5 + ES6), React, Vue, jQuery, Node.js, Express, HTML, and CSS. I also make use of tools such as Git/GitHub, Postman, npm, and Webpack.</p>
+                      <p>This website is built with React and was coded with Visual Studio Code, my editor of choice.</p>
                       <br></br>
                     </Tween>
                   </Reveal>

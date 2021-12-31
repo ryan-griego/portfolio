@@ -33,6 +33,10 @@ body {
   font-size: 70px;
 }
 
+/* .contact-github, .contact-linkedin, .contact-general  {
+  opacity: 0;
+} */
+
 .applications-section {
   min-height: 90vh;
 }

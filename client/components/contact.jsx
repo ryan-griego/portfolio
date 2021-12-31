@@ -53,7 +53,7 @@ function Contact(props) {
             </div>
           </Col>
         </Row>
-        <div className="my-4">
+        <div className="mt-3 mb-5">
           <Row className="justify-content-center">
             <Reveal repeat>
               <Tween
