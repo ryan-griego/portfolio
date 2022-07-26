@@ -21,6 +21,16 @@ class Applications extends React.Component {
       projects: [
         {
           id: 1,
+          image: '/images/franchisesnearme.png',
+          alt: 'Franchisesnearme.com Website Thumbnail',
+          name: 'Franchisesnearme.com',
+          technologies: ['Wordpress', 'HTML', 'CSS'],
+          description: 'Website for Spectrum Franchise Group.',
+          github: 'none',
+          live: 'https://www.franchisesnearme.com/'
+        },
+        {
+          id: 1,
           image: '/images/saferacks.jpg',
           alt: 'SafeRacks Thumbnail',
           name: 'SafeRacks',

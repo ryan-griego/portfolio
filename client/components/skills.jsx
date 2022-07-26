@@ -25,9 +25,9 @@ function Skills() {
       tooltip: 'Vue'
     },
     {
-      name: 'jQuery',
-      logo: '/assets/icons/jquery.svg',
-      tooltip: 'jQuery'
+      name: 'PHP',
+      logo: '/assets/icons/php-logo.png',
+      tooltip: 'PHP'
     },
     {
       name: 'Node.js',
@@ -68,7 +68,7 @@ function Skills() {
       name: 'Bootstrap',
       logo: '/assets/icons/bootstrap.svg',
       tooltip: 'Bootstrap'
-    },
+    }
   ];
 
   const skillCards = skills.map((skill, index) => {
@@ -78,7 +78,7 @@ function Skills() {
         logo={skill.logo}
         name={skill.name}
         tooltip={skill.tooltip}
-        />
+      />
 
     );
   });
