@@ -16,6 +16,9 @@ import {
 } from 'react-scroll';
 import { Controls, PlayState, Tween, SplitChars } from 'react-gsap';
 
+import { Route, Routes, BrowserRouter as Router, Switch, Link as DirectoryLink } from "react-router-dom";
+
+
 const ref = React.createRef();
 
 class Header extends React.Component {
@@ -109,6 +112,13 @@ class Header extends React.Component {
                       </Link>
                     </NavItem>
                     <NavItem className="ml-md-5">
+                      {/* <DirectoryLink
+                        to="..#applications"
+
+                        className="pointer px-0 nav-link"
+                      >
+                        Hom or app
+                      </DirectoryLink> */}
                       <Link activeClass="active"
                         to="applications"
                         spy={true}
@@ -120,6 +130,17 @@ class Header extends React.Component {
                     Websites
                       </Link>
                     </NavItem>
+
+                    <NavItem className="ml-md-5">
+                      <DirectoryLink
+                        to="/blog"
+
+                        className="pointer px-0 nav-link"
+                        >
+                        Blog
+                      </DirectoryLink>
+                    </NavItem>
+
                     <NavItem className="ml-md-5">
                       <Link activeClass="active"
                         to="contact"

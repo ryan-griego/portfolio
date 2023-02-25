@@ -5,7 +5,6 @@ import AboutMe from './about-me';
 import Skills from './skills';
 import Tools from './tools';
 import Applications from './blog/home';
-import Portfolio from './portfolio';
 import Contact from './contact';
 import {Route, Routes, BrowserRouter as Router, Switch, Link} from "react-router-dom";
 import Applications_route from "./blog/home.jsx";
@@ -38,23 +37,15 @@ class App extends React.Component {
 
 
       <>
-        <Router>
-          <Routes>
-          {/* <div className="contaner">
-            <p>Let's add routing</p>
-          </div> */}
-            <Route path="/blog" element={<Applications_route />} />
-            <Route path="/" element={<Portfolio />} />
-          </Routes>
-        {/* <Header />
+        <Header />
         <Hero />
         <AboutMe />
         <Skills />
         <Tools />
         <Applications />
-        <Contact year={this.state.year} /> */}
+        <Contact year={this.state.year} />
 
-      </Router>
+
       </>
     );
   }
