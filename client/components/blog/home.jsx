@@ -98,36 +98,33 @@ class Applications extends React.Component {
   //   }
   // }
 
-
-
   render() {
     return (
-  <>
-    <Header />
-      <div className="applications-section bg-white"
-        id="applications">
+      <>
+        <Header />
+        <div className="applications-section bg-white"
+          id="applications">
 
-        <Container>
+          <Container>
 
-          <Row>
-            <Col xs="12">
+            <Row>
+              <Col xs="12">
 
-              <Reveal repeat>
-                <Tween
-                  from={{ opacity: 0, x: '-100px' }} duration={0.5}
-                  to={{ opacity: 1, x: '0px' }} duration={0.5}
-                >
-                  <h3>Blog</h3>
-                </Tween>
-              </Reveal>
-
+                <Reveal repeat>
+                  <Tween
+                    from={{ opacity: 0, x: '-100px' }} duration={0.5}
+                    to={{ opacity: 1, x: '0px' }} duration={0.5}
+                  >
+                    <h3>Blog</h3>
+                  </Tween>
+                </Reveal>
 
                 <Grid blog_articles={this.state.blog_articles} blog={false} />
-            </Col>
-          </Row>
-        </Container>
-      </div>
-  </>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </>
     );
   }
 }

@@ -8,7 +8,6 @@ import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
 
 function ProjectCard(props) {
 
-
   const gitHubLink = <Reveal repeat>
     <Tween
       from={{ opacity: 0, y: '50px' }} duration={1}
@@ -19,15 +18,15 @@ function ProjectCard(props) {
         href={props.project.github}>
         <i className="fab fa-github mr-2" />GitHub</a></Tween>
   </Reveal>;
-console.log('log the props',props);
+  console.log('log the props', props);
   const img = <img src={props.project.image}
     className="img-fluid border rounded"
     alt={props.project.alt} />;
 
-    console.log("log the img", img);
+  console.log('log the img', img);
 
   const checkGithub = props.project.github === 'none' ? '' : gitHubLink;
-  console.log("log the props", props);
+  console.log('log the props', props);
   const isBlog = props.blog === true ? '' : img;
   return (
 
@@ -43,7 +42,6 @@ console.log('log the props',props);
               target="_blank"
               rel="noopener noreferrer"
               className="pointer decoration-none position-relative">
-
 
               {isBlog}
               {/* <img src={props.project.image}

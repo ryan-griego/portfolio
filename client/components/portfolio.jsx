@@ -6,10 +6,10 @@ import Skills from './skills';
 import Tools from './tools';
 import Applications from './blog/home';
 import Contact from './contact';
-import {Route, Routes, BrowserRouter as Router, Switch, Link} from "react-router-dom";
-import Applications_route from "./blog/home.jsx";
+import { Route, Routes, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
+import Applications_route from './blog/home.jsx';
 
-console.log("log the Contact", Contact);
+console.log('log the Contact', Contact);
 
 class App extends React.Component {
   constructor() {
@@ -32,9 +32,8 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("process.env.PUBLIC_URL", process.env);
+    console.log('process.env.PUBLIC_URL', process.env);
     return (
-
 
       <>
         <Header />
@@ -44,7 +43,6 @@ class App extends React.Component {
         <Tools />
         <Applications />
         <Contact year={this.state.year} />
-
 
       </>
     );
