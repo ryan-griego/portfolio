@@ -8,7 +8,11 @@ import {
   Nav,
   NavItem,
   Card,
-  Fade
+  Fade,
+  Form,
+  FormGroup,
+  Label,
+  Input
 } from 'reactstrap';
 import {
   Link,
@@ -22,15 +26,22 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      isFunModeChecked: true
     };
     this.handleToggle = this.handleToggle.bind(this);
+    this.toggleFunMode = this.toggleFunMode.bind(this);
   }
 
   handleToggle() {
     if (window.innerWidth < 768) {
       this.setState({ isOpen: !this.state.isOpen });
     }
+  }
+
+  toggleFunMode() {
+    this.setState({isFunModeChecked: !this.state.isFunModeChecked });
+    console.log("log the value of isFunModeChecked", this.state.isFunModeChecked);
   }
 
   render() {
@@ -61,6 +72,14 @@ class Header extends React.Component {
                   className="img-fluid header-logo"
                   alt="R/G - Ryan Griego" />
               </Tween>
+              <Form>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="checkbox" onClick={this.toggleFunMode} />{' '}
+                    Fun Mode
+                  </Label>
+                </FormGroup>
+              </Form>
 
             </NavbarBrand>
 
