@@ -40,8 +40,8 @@ class Header extends React.Component {
   }
 
   toggleFunMode() {
-    this.setState({isFunModeChecked: !this.state.isFunModeChecked });
-    console.log("log the value of isFunModeChecked", this.state.isFunModeChecked);
+    this.setState({ isFunModeChecked: !this.state.isFunModeChecked });
+    console.log('log the value of isFunModeChecked', this.state.isFunModeChecked);
   }
 
   render() {

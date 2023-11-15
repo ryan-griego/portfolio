@@ -384,6 +384,12 @@ a.decoration-none:hover::after {
   border-radius: 6px;
 }
 
+/* Fun Mode */
+
+.white-content {
+  background: #fba6a6;
+}
+
 @media (max-width: 768px) {
   .hero-graphic {
     min-height: 50vh;
