@@ -72,14 +72,14 @@ class Header extends React.Component {
                   className="img-fluid header-logo"
                   alt="R/G - Ryan Griego" />
               </Tween>
-              <Form>
+              {/* <Form>
                 <FormGroup check>
                   <Label check>
                     <Input type="checkbox" onClick={this.toggleFunMode} />{' '}
                     Fun Mode
                   </Label>
                 </FormGroup>
-              </Form>
+              </Form> */}
 
             </NavbarBrand>
 
