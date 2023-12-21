@@ -13,15 +13,13 @@ import ToggleSwitchFun from './toggle-switch-fun';
 
 import { ThemeContext, themes } from '../contexts/ThemeContext';
 
-import { useLocation } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 // const MyComponent = () => {
 //   const myParam = useLocation().search;
 //   const productId = new URLSearchParams(search).get("id");
 //   console.log(productId); // 159
 // }
-
-
 
 class App extends React.Component {
   constructor() {

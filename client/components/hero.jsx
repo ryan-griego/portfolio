@@ -10,7 +10,7 @@ import { Controls, PlayState, Tween, SplitChars } from 'react-gsap';
 function Hero(props) {
   console.log('log the props in hero', props);
   if (props.isFun === 'true') {
-    console.log("log value of isFun in true", props.isFun);
+    console.log('log value of isFun in true', props.isFun);
     return (
       <div className="main-hero d-flex bg-red">
         <Container
@@ -69,7 +69,7 @@ function Hero(props) {
       </div>
     );
   } else {
-    console.log("log value of isFun in false", props.isFun);
+    console.log('log value of isFun in false', props.isFun);
     console.log('log the props in the false return statement', props);
     return (
       <div className="main-hero d-flex bg-white">
