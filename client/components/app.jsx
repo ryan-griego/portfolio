@@ -13,6 +13,16 @@ import ToggleSwitchFun from './toggle-switch-fun';
 
 import { ThemeContext, themes } from '../contexts/ThemeContext';
 
+import { useLocation } from "react-router-dom";
+
+// const MyComponent = () => {
+//   const myParam = useLocation().search;
+//   const productId = new URLSearchParams(search).get("id");
+//   console.log(productId); // 159
+// }
+
+
+
 class App extends React.Component {
   constructor() {
     super();
@@ -51,7 +61,6 @@ class App extends React.Component {
     this.setState({ year });
   }
 
-
   componentDidMount() {
     this.getYear();
   }
@@ -85,7 +94,7 @@ class App extends React.Component {
           ? <Hero isFun='true'/>
           : <Hero isFun='false' />}
 
-        <Hero />
+        {/* <Hero /> */}
         <AboutMe />
         <Skills />
         <Tools />
