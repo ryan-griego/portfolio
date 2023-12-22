@@ -12,6 +12,7 @@ body {
   margin: 0 0 0 0;
   font-family: 'Corsa Grotesk', 'Corsa Grotesk Thin', sans-serif;
   font-size: 0;
+  min-height: 100vh;
 }
 
 * {
@@ -21,7 +22,57 @@ body {
 }
 
 .main-hero {
-  min-height: 75vh;
+  min-height: 100vh;
+}
+
+.bg-main {
+  background-image: url('./images/home-background-ryan-griego.jpeg');
+      background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+}
+
+.bg-white {
+  /* opacity:1!important; */
+  background-color: white !important;
+  transition: background-color 0.5s ease;
+}
+
+.bg-transparent {
+
+  background-color: transparent!important;
+  transition: background-color 0.5s ease;
+  /* transition: opacity 5s;
+  opacity: 0!important; */
+
+}
+
+/* .bg-transparent ul > li {
+  color:red!important;
+} */
+
+.overlay-intro {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .9;
+}
+
+.hero-container {
+  display: flex!important;
+  flex-wrap: wrap!important;
+  justify-content: center!important;
+}
+
+.hero-subheading {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
 }
 
 .hero-image {
@@ -30,6 +81,8 @@ body {
 }
 
 .hero-name {
+
+  color:white;
   font-size: 70px;
 }
 
@@ -183,9 +236,26 @@ a.decoration-none:hover::after {
   border-color: #00000080;
 }
 
+.nav-link-white {
+  color: white!important;
+}
+
+.sticky-top {
+  position: fixed
+}
+
 .default-nav:hover {
   color: #000000b3;
   border-color: #000000b3;
+}
+
+/* This is where you can style the nav items when their active */
+
+.navbar ul li>.active {
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black
 }
 
 .default-color {
@@ -369,8 +439,8 @@ a.decoration-none:hover::after {
 }
 
 .header-logo {
-  max-width: 260px;
-  border: 3px solid #212529;
+  max-width: 330px;
+  /* border: 3px solid #212529; */
   border-radius: 6px;
 }
 

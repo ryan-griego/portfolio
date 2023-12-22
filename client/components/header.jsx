@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
   Container,
   Collapse,
@@ -18,55 +18,44 @@ import { Controls, PlayState, Tween, SplitChars } from 'react-gsap';
 
 const ref = React.createRef();
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false
-    };
-    this.handleToggle = this.handleToggle.bind(this);
-  }
 
-  handleToggle() {
+function Header() {
+  const [navbar,setNavbar] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
     if (window.innerWidth < 768) {
-      this.setState({ isOpen: !this.state.isOpen });
+      setIsOpen(!isOpen);
     }
-  }
+  };
 
-  render() {
-    let offset = -86;
-
-    if (window.innerWidth < 768) {
-      offset = -286;
+  window.addEventListener('scroll', function () {
+    let scrollPosition = window.scrollY;
+    if (scrollPosition > 200) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
     }
+  });
 
     return (
       <>
-        <Container fluid={true} className="py-3 shadow-lg bg-white sticky-top">
+        <Container fluid={true} className={navbar ? "py-3 shadow-lg sticky-top bg-white" : "py-3 shadow-lg sticky-top bg-transparent"}>
           <Navbar color="faded" light
             expand="md"
-            className="row py-0">
-
-            <NavbarBrand onClick={() => {
-              scroll.scrollToTop();
-              if (this.state.isOpen) {
-                this.handleToggle();
-              }
-            }}
+            className="row py-0 navbar"
+           >
+            <NavbarBrand
             className="pointer decoration-none">
               <Tween from={{ x: '-300px' }} duration={1}>
-
                 <img
-                  src="./images/portfolio-ryan-logo.png"
+                  src={navbar ? "./images/portfolio-ryan-logo.png" : "./images/ryan-griego-logo-dark.png"}
                   className="img-fluid header-logo"
                   alt="R/G - Ryan Griego" />
               </Tween>
-
             </NavbarBrand>
-
-            <NavbarToggler onClick={this.handleToggle} navbar="true" />
-
-            <Collapse isOpen={this.state.isOpen} navbar>
+            <NavbarToggler navbar="true" onClick={toggle} />
+            <Collapse navbar isOpen={isOpen}>
               <Tween
                 from={{ y: '-100%', delay: 1 }} duration={0.3}
               >
@@ -77,10 +66,9 @@ class Header extends React.Component {
                         to="about"
                         spy={true}
                         smooth={true}
-                        offset={offset}
                         duration={1000}
-                        className="pointer px-0 nav-link"
-                        onClick={this.handleToggle}>
+                        className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
+                        >
                       About Me
                       </Link>
                     </NavItem>
@@ -89,10 +77,9 @@ class Header extends React.Component {
                         to="skills"
                         spy={true}
                         smooth={true}
-                        offset={offset}
                         duration={1000}
-                        className="pointer px-0 nav-link"
-                        onClick={this.handleToggle}>
+                        className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
+                     >
                     Skills
                       </Link>
                     </NavItem>
@@ -101,10 +88,9 @@ class Header extends React.Component {
                         to="tools"
                         spy={true}
                         smooth={true}
-                        offset={offset}
                         duration={1000}
-                        className="pointer px-0 nav-link"
-                        onClick={this.handleToggle}>
+                        className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
+                   >
                     Tools
                       </Link>
                     </NavItem>
@@ -113,10 +99,9 @@ class Header extends React.Component {
                         to="applications"
                         spy={true}
                         smooth={true}
-                        offset={offset}
                         duration={1000}
-                        className="pointer px-0 nav-link"
-                        onClick={this.handleToggle}>
+                        className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
+                  >
                     Websites
                       </Link>
                     </NavItem>
@@ -125,10 +110,10 @@ class Header extends React.Component {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={offset}
+
                         duration={1000}
-                        className="pointer px-0 nav-link"
-                        onClick={this.handleToggle}>
+                        className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
+                   >
                     Contact
                       </Link>
                     </NavItem>
@@ -136,13 +121,11 @@ class Header extends React.Component {
                 </div>
               </Tween>
             </Collapse>
-
           </Navbar>
-
         </Container>
       </>
     );
-  }
+  // }
 }
 
 export default Header;
