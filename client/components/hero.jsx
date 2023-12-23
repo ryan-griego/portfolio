@@ -35,7 +35,7 @@ function Hero() {
                   to={{ x: '0px', y: '0px', delay: 2.75, opacity: 1 }} stagger={0.1}
                 >
                   <SplitChars
-                    wrapper={<h1 style={{ fontSize: '40px' }} className="text-muted h3" />}
+                    wrapper={<h1 className="text-muted h3 subheading" />}
                   >
                   Software&nbsp;Engineer
                   </SplitChars>
