@@ -15,6 +15,10 @@ body {
   min-height: 100vh;
 }
 
+.subheading {
+  font-size: 40px!important;
+}
+
 * {
   box-sizing: border-box;
   font-size: 1rem;
@@ -461,6 +465,10 @@ a.decoration-none:hover::after {
   .hero-name {
     font-size: 3rem;
   }
+  .bg-main {
+    background-position: left center;
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -476,6 +484,17 @@ a.decoration-none:hover::after {
     padding: 0px;
     margin-bottom: 15px;
   }
+  .subheading {
+    font-size: 30px !important;
+  }
+  .navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, .9);
+    margin: 0 auto;
+  }
+  .bg-main {
+    background-position: left center;
+  }
+
 }
 
 @keyframes fade-in {
