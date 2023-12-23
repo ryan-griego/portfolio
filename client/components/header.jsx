@@ -22,6 +22,9 @@ function Header() {
   const [navbar, setNavbar] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
+
+
+
   const toggle = () => {
     if (window.innerWidth < 768) {
       setIsOpen(!isOpen);
@@ -32,9 +35,13 @@ function Header() {
     const scrollPosition = window.scrollY;
     if (scrollPosition > 200) {
       setNavbar(true);
-    } else {
-      setNavbar(false);
     }
+      else {
+        setNavbar(false);
+      }
+
+
+
   });
 
   return (
@@ -44,6 +51,8 @@ function Header() {
           expand="md"
           className="row py-0 navbar"
         >
+
+
           <NavbarBrand
             className="pointer decoration-none">
             <Tween from={{ x: '-300px' }} duration={1}>
@@ -53,7 +62,7 @@ function Header() {
                 alt="R/G - Ryan Griego" />
             </Tween>
           </NavbarBrand>
-          <NavbarToggler navbar="true" onClick={toggle} />
+          <NavbarToggler navbar="true" onClick={toggle}/>
           <Collapse navbar isOpen={isOpen}>
             <Tween
               from={{ y: '-100%', delay: 1 }} duration={0.3}
