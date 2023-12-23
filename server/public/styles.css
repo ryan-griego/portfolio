@@ -38,7 +38,6 @@ body {
 }
 
 .bg-white {
-  /* opacity:1!important; */
   background-color: white !important;
   transition: background-color 0.5s ease;
 }
@@ -47,14 +46,7 @@ body {
 
   background-color: transparent!important;
   transition: background-color 0.5s ease;
-  /* transition: opacity 5s;
-  opacity: 0!important; */
-
 }
-
-/* .bg-transparent ul > li {
-  color:red!important;
-} */
 
 .overlay-intro {
   background-color: rgba(0, 0, 0, 0.6);
@@ -89,10 +81,6 @@ body {
   color:white;
   font-size: 70px;
 }
-
-/* .contact-github, .contact-linkedin, .contact-general  {
-  opacity: 0;
-} */
 
 .applications-section {
   min-height: 90vh;
@@ -253,7 +241,7 @@ a.decoration-none:hover::after {
   border-color: #000000b3;
 }
 
-/* This is where you can style the nav items when their active */
+/* This is where you can style the nav items when they're active */
 
 .navbar ul li>.active {
   padding-bottom: 5px;
@@ -385,10 +373,6 @@ a.decoration-none:hover::after {
   border-color: transparent;
 }
 
-/* .tools-section .card:hover {
-  border-color: #fff;
-} */
-
 .smooth-transition {
   transition: .3s all;
 }
@@ -444,7 +428,6 @@ a.decoration-none:hover::after {
 
 .header-logo {
   max-width: 330px;
-  /* border: 3px solid #212529; */
   border-radius: 6px;
 }
 
@@ -458,6 +441,12 @@ a.decoration-none:hover::after {
   border-radius: 6px;
 }
 
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, .5);
+  border-color: rgba(0, 0, 0, .1);
+  background-color: white;
+}
+
 @media (max-width: 768px) {
   .hero-graphic {
     min-height: 50vh;
@@ -467,6 +456,10 @@ a.decoration-none:hover::after {
   }
   .bg-main {
     background-position: left center;
+  }
+
+  .navbar-dark .navbar-toggler {
+      background-color: rgb(240, 240, 240)!important;
   }
 
 }
@@ -494,6 +487,11 @@ a.decoration-none:hover::after {
   .bg-main {
     background-position: left center;
   }
+
+  .navbar-dark .navbar-toggler {
+    background-color: rgb(240, 240, 240)!important;
+  }
+
 
 }
 
