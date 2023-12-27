@@ -22,9 +22,6 @@ function Header() {
   const [navbar, setNavbar] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-
-
-
   const toggle = () => {
     if (window.innerWidth < 768) {
       setIsOpen(!isOpen);
@@ -35,12 +32,9 @@ function Header() {
     const scrollPosition = window.scrollY;
     if (scrollPosition > 200) {
       setNavbar(true);
+    } else {
+      setNavbar(false);
     }
-      else {
-        setNavbar(false);
-      }
-
-
 
   });
 
@@ -51,11 +45,9 @@ function Header() {
           expand="md"
           className="row py-0 navbar"
         >
-
-
           <NavbarBrand
             className="pointer decoration-none">
-            <Tween from={{ x: '-300px' }} duration={1}>
+            <Tween from={{ x: '-300px', delay: 2 }} duration={1}>
               <img
                 src={navbar ? './images/portfolio-ryan-logo.png' : './images/ryan-griego-logo-dark.png'}
                 className="img-fluid header-logo"
@@ -65,7 +57,7 @@ function Header() {
           <NavbarToggler navbar="true" onClick={toggle}/>
           <Collapse navbar isOpen={isOpen}>
             <Tween
-              from={{ y: '-100%', delay: 1 }} duration={0.3}
+              from={{ y: '-100%', delay: 3 }} duration={0.3}
             >
               <div style={{ marginLeft: 'auto' }}>
                 <Nav className="ml-auto" navbar>
@@ -120,7 +112,7 @@ function Header() {
                       smooth={true}
 
                       duration={1000}
-                      className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
+                      className={navbar ? 'pointer px-0 nav-link pr-4' : 'pointer px-0 nav-link-white pr-4'}
                     >
                     Contact
                     </Link>

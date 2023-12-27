@@ -6,7 +6,6 @@ import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
 
 function ToggleSwitch(props) {
   return (
-
     <div className="d-flex flex-direction-row slide-in-10">
       <div className="d-flex mx-auto mb-4">
         <div className="mr-3">
