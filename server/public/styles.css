@@ -17,6 +17,8 @@ body {
 
 .subheading {
   font-size: 40px!important;
+  letter-spacing: 1.1px;
+
 }
 
 * {
@@ -80,6 +82,7 @@ body {
 
   color:white;
   font-size: 70px;
+  letter-spacing: 1.1px;
 }
 
 .applications-section {
@@ -363,7 +366,7 @@ a.decoration-none:hover::after {
 }
 
 .topographic-2 {
-  background-image: linear-gradient(-45deg, #1a9ba2ab, #18b082c4), url('./images/wood-pattern-trial.jpg');
+  background-image: linear-gradient(-45deg, #1a9ba2ab, #18b082c4), url('./images/tools-technologies-bg.gif');
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
@@ -434,11 +437,6 @@ a.decoration-none:hover::after {
 .btn.disabled-opacity,
 .disabled-opacity {
   opacity: .1;
-}
-
-.footer-logo {
-  border: 3px solid #212529;
-  border-radius: 6px;
 }
 
 .navbar-light .navbar-toggler {
