@@ -1,4 +1,5 @@
 import React from 'react';
+import { Sugar } from 'react-preloaders';
 import Header from './header';
 import Hero from './hero';
 import AboutMe from './about-me';
@@ -30,13 +31,16 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Header />
-        <Hero />
-        <AboutMe />
-        <Skills />
-        <Tools />
-        <Applications />
-        <Contact year={this.state.year} />
+        <React.Fragment>
+          <Header />
+          <Hero />
+          <AboutMe />
+          <Skills />
+          <Tools />
+          <Applications />
+          <Contact year={this.state.year} />
+          <Sugar color="#24ecd7;" background="linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(22,91,92,1) 39%, rgba(17,39,47,1) 61%, rgba(2,4,4,1) 80%)" />
+        </React.Fragment>
       </>
     );
   }

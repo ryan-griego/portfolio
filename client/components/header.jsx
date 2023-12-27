@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
   Container,
   Collapse,
@@ -18,131 +18,114 @@ import { Controls, PlayState, Tween, SplitChars } from 'react-gsap';
 
 const ref = React.createRef();
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false
-    };
-    this.handleToggle = this.handleToggle.bind(this);
-  }
+function Header() {
+  const [navbar, setNavbar] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  handleToggle() {
+  const toggle = () => {
     if (window.innerWidth < 768) {
-      this.setState({ isOpen: !this.state.isOpen });
+      setIsOpen(!isOpen);
     }
-  }
+  };
 
-  render() {
-    let offset = -86;
-
-    if (window.innerWidth < 768) {
-      offset = -286;
+  window.addEventListener('scroll', function () {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 200) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
     }
 
-    return (
-      <>
-        <Container fluid={true} className="py-3 shadow-lg bg-white sticky-top">
-          <Navbar color="faded" light
-            expand="md"
-            className="row py-0">
+  });
 
-            <NavbarBrand onClick={() => {
-              scroll.scrollToTop();
-              if (this.state.isOpen) {
-                this.handleToggle();
-              }
-            }}
+  return (
+    <>
+      <Container fluid={true} className={navbar ? 'py-3 shadow-lg sticky-top bg-white' : 'py-3 shadow-lg sticky-top bg-transparent'}>
+        <Navbar color="faded" light
+          expand="md"
+          className="row py-0 navbar"
+        >
+          <NavbarBrand
             className="pointer decoration-none">
-              <Tween from={{ x: '-300px' }} duration={1}>
-
-                <img
-                  src="./images/portfolio-ryan-logo.png"
-                  className="img-fluid header-logo"
-                  alt="R/G - Ryan Griego" />
-              </Tween>
-
-            </NavbarBrand>
-
-            <NavbarToggler onClick={this.handleToggle} navbar="true" />
-
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Tween
-                from={{ y: '-100%', delay: 1 }} duration={0.3}
-              >
-                <div style={{ marginLeft: 'auto' }}>
-                  <Nav className="ml-auto" navbar>
-                    <NavItem>
-                      <Link activeClass="active"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={offset}
-                        duration={1000}
-                        className="pointer px-0 nav-link"
-                        onClick={this.handleToggle}>
+            <Tween from={{ x: '-300px', delay: 2 }} duration={1}>
+              <img
+                src={navbar ? './images/portfolio-ryan-logo.png' : './images/ryan-griego-logo-dark.png'}
+                className="img-fluid header-logo"
+                alt="R/G - Ryan Griego" />
+            </Tween>
+          </NavbarBrand>
+          <NavbarToggler navbar="true" onClick={toggle}/>
+          <Collapse navbar isOpen={isOpen}>
+            <Tween
+              from={{ y: '-100%', delay: 3 }} duration={0.3}
+            >
+              <div style={{ marginLeft: 'auto' }}>
+                <Nav className="ml-auto" navbar>
+                  <NavItem>
+                    <Link activeClass="active"
+                      to="about"
+                      spy={true}
+                      smooth={true}
+                      duration={1000}
+                      className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
+                    >
                       About Me
-                      </Link>
-                    </NavItem>
-                    <NavItem className="ml-md-5">
-                      <Link activeClass="active"
-                        to="skills"
-                        spy={true}
-                        smooth={true}
-                        offset={offset}
-                        duration={1000}
-                        className="pointer px-0 nav-link"
-                        onClick={this.handleToggle}>
+                    </Link>
+                  </NavItem>
+                  <NavItem className="ml-md-5">
+                    <Link activeClass="active"
+                      to="skills"
+                      spy={true}
+                      smooth={true}
+                      duration={1000}
+                      className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
+                    >
                     Skills
-                      </Link>
-                    </NavItem>
-                    <NavItem className="ml-md-5">
-                      <Link activeClass="active"
-                        to="tools"
-                        spy={true}
-                        smooth={true}
-                        offset={offset}
-                        duration={1000}
-                        className="pointer px-0 nav-link"
-                        onClick={this.handleToggle}>
+                    </Link>
+                  </NavItem>
+                  <NavItem className="ml-md-5">
+                    <Link activeClass="active"
+                      to="tools"
+                      spy={true}
+                      smooth={true}
+                      duration={1000}
+                      className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
+                    >
                     Tools
-                      </Link>
-                    </NavItem>
-                    <NavItem className="ml-md-5">
-                      <Link activeClass="active"
-                        to="applications"
-                        spy={true}
-                        smooth={true}
-                        offset={offset}
-                        duration={1000}
-                        className="pointer px-0 nav-link"
-                        onClick={this.handleToggle}>
+                    </Link>
+                  </NavItem>
+                  <NavItem className="ml-md-5">
+                    <Link activeClass="active"
+                      to="applications"
+                      spy={true}
+                      smooth={true}
+                      duration={1000}
+                      className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
+                    >
                     Websites
-                      </Link>
-                    </NavItem>
-                    <NavItem className="ml-md-5">
-                      <Link activeClass="active"
-                        to="contact"
-                        spy={true}
-                        smooth={true}
-                        offset={offset}
-                        duration={1000}
-                        className="pointer px-0 nav-link"
-                        onClick={this.handleToggle}>
+                    </Link>
+                  </NavItem>
+                  <NavItem className="ml-md-5">
+                    <Link activeClass="active"
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+
+                      duration={1000}
+                      className={navbar ? 'pointer px-0 nav-link pr-4' : 'pointer px-0 nav-link-white pr-4'}
+                    >
                     Contact
-                      </Link>
-                    </NavItem>
-                  </Nav>
-                </div>
-              </Tween>
-            </Collapse>
-
-          </Navbar>
-
-        </Container>
-      </>
-    );
-  }
+                    </Link>
+                  </NavItem>
+                </Nav>
+              </div>
+            </Tween>
+          </Collapse>
+        </Navbar>
+      </Container>
+    </>
+  );
+  // }
 }
 
 export default Header;

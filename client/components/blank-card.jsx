@@ -42,10 +42,8 @@ function BlankCard(props) {
                 &nbsp;
               </p>
             </div>
-
           </Tween>
         </Reveal>
-
       </CardBody>
       <CardFooter className="bg-white p-3">
         <Reveal repeat>

@@ -5,7 +5,7 @@ import {
   Col
 } from 'reactstrap';
 import LazyLoad from 'react-lazy-load';
-import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
+import { Controls, PlayState, Tween, Reveal, Timeline } from 'react-gsap';
 
 function AboutMe() {
   return (
