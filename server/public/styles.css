@@ -12,6 +12,13 @@ body {
   margin: 0 0 0 0;
   font-family: 'Corsa Grotesk', 'Corsa Grotesk Thin', sans-serif;
   font-size: 0;
+  min-height: 100vh;
+}
+
+.subheading {
+  font-size: 40px!important;
+  letter-spacing: 1.1px;
+
 }
 
 * {
@@ -21,7 +28,49 @@ body {
 }
 
 .main-hero {
-  min-height: 75vh;
+  min-height: 100vh;
+}
+
+.bg-main {
+  background-image: url('./images/home-background-ryan-griego.jpeg');
+      background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+}
+
+.bg-white {
+  background-color: white !important;
+  transition: background-color 0.5s ease;
+}
+
+.bg-transparent {
+
+  background-color: transparent!important;
+  transition: background-color 0.5s ease;
+}
+
+.overlay-intro {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .9;
+}
+
+.hero-container {
+  display: flex!important;
+  flex-wrap: wrap!important;
+  justify-content: center!important;
+}
+
+.hero-subheading {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
 }
 
 .hero-image {
@@ -30,12 +79,11 @@ body {
 }
 
 .hero-name {
-  font-size: 70px;
-}
 
-/* .contact-github, .contact-linkedin, .contact-general  {
-  opacity: 0;
-} */
+  color:white;
+  font-size: 70px;
+  letter-spacing: 1.1px;
+}
 
 .applications-section {
   min-height: 90vh;
@@ -183,9 +231,26 @@ a.decoration-none:hover::after {
   border-color: #00000080;
 }
 
+.nav-link-white {
+  color: white!important;
+}
+
+.sticky-top {
+  position: fixed
+}
+
 .default-nav:hover {
   color: #000000b3;
   border-color: #000000b3;
+}
+
+/* This is where you can style the nav items when they're active */
+
+.navbar ul li>.active {
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black
 }
 
 .default-color {
@@ -301,7 +366,7 @@ a.decoration-none:hover::after {
 }
 
 .topographic-2 {
-  background-image: linear-gradient(-45deg, #1a9ba2ab, #18b082c4), url('./images/wood-pattern-trial.jpg');
+  background-image: linear-gradient(-45deg, #1a9ba2ab, #18b082c4), url('./images/tools-technologies-bg.gif');
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
@@ -310,10 +375,6 @@ a.decoration-none:hover::after {
 .tools-section .card {
   border-color: transparent;
 }
-
-/* .tools-section .card:hover {
-  border-color: #fff;
-} */
 
 .smooth-transition {
   transition: .3s all;
@@ -369,8 +430,7 @@ a.decoration-none:hover::after {
 }
 
 .header-logo {
-  max-width: 260px;
-  border: 3px solid #212529;
+  max-width: 330px;
   border-radius: 6px;
 }
 
@@ -379,9 +439,10 @@ a.decoration-none:hover::after {
   opacity: .1;
 }
 
-.footer-logo {
-  border: 3px solid #212529;
-  border-radius: 6px;
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, .5);
+  border-color: rgba(0, 0, 0, .1);
+  background-color: white;
 }
 
 @media (max-width: 768px) {
@@ -391,6 +452,14 @@ a.decoration-none:hover::after {
   .hero-name {
     font-size: 3rem;
   }
+  .bg-main {
+    background-position: left center;
+  }
+
+  .navbar-dark .navbar-toggler {
+      background-color: rgb(240, 240, 240)!important;
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -406,6 +475,22 @@ a.decoration-none:hover::after {
     padding: 0px;
     margin-bottom: 15px;
   }
+  .subheading {
+    font-size: 30px !important;
+  }
+  .navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, .9);
+    margin: 0 auto;
+  }
+  .bg-main {
+    background-position: left center;
+  }
+
+  .navbar-dark .navbar-toggler {
+    background-color: rgb(240, 240, 240)!important;
+  }
+
+
 }
 
 @keyframes fade-in {
