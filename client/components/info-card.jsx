@@ -13,7 +13,6 @@ function InfoCard(props) {
       md="4"
       sm="6"
       className="p-sm-3 mobile-six-card">
-
       <Card className={`h-100 skills-card ${props.classes}`}>
         <CardBody>
           <Reveal repeat>
@@ -21,13 +20,15 @@ function InfoCard(props) {
               from={{ opacity: 0, y: '50px' }} duration={0.5}
               to={{ opacity: 1, y: '0px' }} duration={0.5}
             >
-
+              <div className={`${props.skill}`}>
+                <figure>
               <img
                 alt={props.tooltip}
                 title={props.tooltip}
                 src={props.logo}
                 className="icon-svg d-block m-auto" />
-
+              </figure>
+                </div>
               <div className="my-3">
                 <h4 className="text-center h5">{props.name}</h4>
               </div>
@@ -35,7 +36,6 @@ function InfoCard(props) {
           </Reveal>
         </CardBody>
       </Card>
-
     </Col>
   );
 }

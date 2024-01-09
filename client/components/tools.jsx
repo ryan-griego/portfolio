@@ -74,6 +74,7 @@ function Tools() {
   const toolCards = tools.map((tool, index) => {
     return (
       <InfoCard key={index}
+        skill={''}
         logo={tool.logo}
         name={tool.name}
         tooltip={tool.tooltip}
