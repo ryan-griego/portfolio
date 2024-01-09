@@ -75,6 +75,7 @@ function Skills() {
     return (
 
       <InfoCard key={index}
+        skill={'shine'}
         logo={skill.logo}
         name={skill.name}
         tooltip={skill.tooltip}

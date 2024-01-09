@@ -34,11 +34,12 @@ function ProjectCard(props) {
               target="_blank"
               rel="noopener noreferrer"
               className="pointer decoration-none position-relative">
-              <img src={props.project.image}
-                className="img-fluid border rounded"
-                alt={props.project.alt} />
+              <div className="img-hover-zoom">
+                  <img src={props.project.image}
+                  className="img-fluid border rounded"
+                  alt={props.project.alt} />
+              </div>
             </a>
-
             <h5 className="text-center my-3">
               {props.project.name}
             </h5>
