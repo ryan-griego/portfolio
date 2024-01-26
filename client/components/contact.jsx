@@ -12,7 +12,7 @@ function Contact(props) {
     <div className="content-div footer bg-white d-flex" id="contact">
       <Container className="m-auto">
         <Row>
-          <Col sm="4" className="d-none d-sm-block">
+          <Col sm="3" className="d-none d-sm-block">
 
             <div className="h-100 d-flex">
               <Reveal repeat>
@@ -26,7 +26,7 @@ function Contact(props) {
             </div>
 
           </Col>
-          <Col sm="4">
+          <Col sm="6">
 
             <Reveal repeat>
               <Tween
@@ -38,9 +38,9 @@ function Contact(props) {
                   alt="Ryan Griego" />
               </Tween>
             </Reveal>
-
+            <p className="mb-3 text-center">I am willing and able to relocate at short notice.</p>
           </Col>
-          <Col sm="4" className="d-none d-sm-block">
+          <Col sm="3" className="d-none d-sm-block">
             <div className="h-100 d-flex">
               <Reveal repeat>
                 <Tween
@@ -53,7 +53,7 @@ function Contact(props) {
             </div>
           </Col>
         </Row>
-        <div className="mt-3 mb-5">
+        <div className="mt-3 mb-3">
           <Row className="justify-content-center">
             <Reveal repeat>
               <Tween
@@ -89,7 +89,7 @@ function Contact(props) {
                 from={{ opacity: 0, y: '100px' }} duration={1}
                 to={{ opacity: 1, y: '0px' }} duration={1}
               >
-                <div className="mt-5 d-flex">
+                <div className="mt-4 mb-2 d-flex">
                   <a href="https://github.com/ryan-griego/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -121,14 +121,17 @@ function Contact(props) {
                 </div>
               </Tween>
             </Reveal>
+
           </Row>
         </div>
+
+
         <Reveal repeat>
           <Tween
             from={{ opacity: 0, y: '100px' }} duration={1}
             to={{ opacity: 1, y: '0px' }} duration={1}
           >
-            <p className="mb-0 text-center h6">&copy; Ryan Griego {props.year}</p>
+            <p className="mb-0 mt-5 text-center h6">&copy; Ryan Griego {props.year}</p>
           </Tween>
         </Reveal>
       </Container>
