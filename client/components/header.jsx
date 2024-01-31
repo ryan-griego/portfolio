@@ -48,10 +48,7 @@ function Header() {
           <NavbarBrand
             className="pointer decoration-none">
             <Tween from={{ x: '-300px', delay: 2 }} duration={1}>
-              <img
-                src={navbar ? './images/portfolio-ryan-logo.png' : './images/ryan-griego-logo-dark.png'}
-                className="img-fluid header-logo"
-                alt="R/G - Ryan Griego" />
+              <h1 className={navbar ? 'header-logo pl-4' : 'header-logo pl-4 header-logo-dark'}>Ryan Griego</h1>
             </Tween>
           </NavbarBrand>
           <NavbarToggler navbar="true" onClick={toggle}/>

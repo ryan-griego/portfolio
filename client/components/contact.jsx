@@ -24,19 +24,10 @@ function Contact(props) {
                 </Tween>
               </Reveal>
             </div>
-
           </Col>
           <Col sm="6">
-
             <Reveal repeat>
-              <Tween
-                from={{ opacity: 0, y: '100px' }} duration={1}
-                to={{ opacity: 1, y: '0px' }} duration={1}
-              >
-                <img src="./images/portfolio-ryan-logo.png"
-                  className="img-fluid footer-logo fade-in"
-                  alt="Ryan Griego" />
-              </Tween>
+              <h1 className='pl-4 text-center footer-name mb-2'>Ryan Griego</h1>
             </Reveal>
             <p className="mb-3 text-center">I am willing and able to relocate at short notice.</p>
           </Col>
