@@ -20,9 +20,24 @@ function Skills() {
       tooltip: 'React'
     },
     {
+      name: 'Next.js',
+      logo: '/assets/icons/next-js.svg',
+      tooltip: 'Next.js'
+    },
+    {
       name: 'Vue',
       logo: '/assets/icons/vue.svg',
       tooltip: 'Vue'
+    },
+    {
+      name: 'Nuxt.js',
+      logo: '/assets/icons/nuxt-js.svg',
+      tooltip: 'Nuxt.js'
+    },
+    {
+      name: 'TypeScript',
+      logo: '/assets/icons/typescript.svg',
+      tooltip: 'TypeScript'
     },
     {
       name: 'PHP',
@@ -65,9 +80,9 @@ function Skills() {
       tooltip: 'CSS3'
     },
     {
-      name: 'Bootstrap',
-      logo: '/assets/icons/bootstrap.svg',
-      tooltip: 'Bootstrap'
+      name: 'Tailwind CSS',
+      logo: '/assets/icons/tailwind-css.svg',
+      tooltip: 'Tailwind CSS'
     }
   ];
 
