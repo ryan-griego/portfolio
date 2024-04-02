@@ -10,9 +10,9 @@ import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
 function Tools() {
   const tools = [
     {
-      name: 'GitHub',
+      name: 'GitHub Copilot',
       logo: '/assets/icons/github.svg',
-      tooltip: 'GitHub'
+      tooltip: 'GitHub Copilot'
     },
     {
       name: 'AWS',
