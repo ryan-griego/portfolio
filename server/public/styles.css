@@ -292,6 +292,16 @@ a.decoration-none:hover::after {
   color: white!important;
 }
 
+.nav-link{
+  text-transform: uppercase;
+}
+
+.nav-item{
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  font-weight:bolder;
+}
+
 .sticky-top {
   position: fixed
 }
@@ -489,6 +499,18 @@ a.decoration-none:hover::after {
 .header-logo {
   max-width: 330px;
   border-radius: 6px;
+  color: black;
+  font-size:2.2rem;
+  letter-spacing: 1.6px;
+  font-weight: bolder;
+}
+
+.header-logo-dark {
+    color: #f8f8f8;
+}
+
+.footer-name {
+  font-size:2rem;
 }
 
 .btn.disabled-opacity,
