@@ -103,6 +103,14 @@ function Header() {
                     </Link>
                   </NavItem>
                   <NavItem className="ml-md-5">
+                    <a href="https://ryangriego.com/blog"
+                      target="_blank"
+                      className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
+                    >
+                      Blog
+                    </a>
+                  </NavItem>
+                  <NavItem className="ml-md-5">
                     <Link activeClass="active"
                       to="contact"
                       spy={true}
