@@ -4,7 +4,7 @@
   "private": true,
   "description": "Portfolio website",
   "scripts": {
-    "build": "webpack --mode=production",
+    "build": "node --openssl-legacy-provider ./node_modules/webpack/bin/webpack.js --mode=production",
     "dev": "npm-run-all --silent --parallel dev:*",
     "dev:client": "webpack-dev-server"
   },
@@ -20,6 +20,7 @@
     ]
   },
   "dependencies": {
+    "@gsap/react": "^2.1.1",
     "bootstrap": "^4.4.1",
     "devicons": "^1.8.0",
     "gsap": "^3.7.1",
