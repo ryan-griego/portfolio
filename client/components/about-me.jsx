@@ -102,7 +102,7 @@ function AboutMe() {
                       from={{ opacity: 0, y: '100px' }} duration={1}
                       to={{ opacity: 1, y: '0px' }} duration={1}
                     >
-                      <p>Hi! I&#39;m Ryan and I’m a software engineer who loves solving problems and instructing computers to do things that make a tremendous impact. My philosophy is simple: “details, details, details… Take the time to attend to every detail.”</p>
+                      <p>Hello! I&#39;m Ryan and I’m a software engineer who loves solving problems and instructing computers to do things that make a tremendous impact. My philosophy is simple: “details, details, details… Take the time to attend to every detail.”</p>
                       <p>I’ve been working professionally in the industry since 2014 and have skills in the following languages JavaScript (ES5 + ES6), React, Vue, PHP, Node.js, Express, HTML, and CSS. I also make use of tools such as Git/GitHub, Postman, npm, and Webpack.</p>
                       <p>This website is built with React and was coded with Visual Studio Code, my editor of choice.</p>
                       <br></br>
