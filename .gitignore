@@ -4,3 +4,5 @@ server/.DS_Store
 server/public/.DS_Store
 server/public/images/.DS_Store
 node_modules/
+server/public/main.js
+server/public/main.js.map
