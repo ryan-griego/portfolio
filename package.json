@@ -4,7 +4,7 @@
   "private": true,
   "description": "Portfolio website",
   "scripts": {
-    "build": "node --openssl-legacy-provider ./node_modules/webpack/bin/webpack.js --mode=production",
+    "build": "webpack --mode=production",
     "dev": "npm-run-all --silent --parallel dev:*",
     "dev:client": "webpack-dev-server"
   },
