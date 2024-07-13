@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Container,
   Row,
-  Col
+  Col,
+  Button
 } from 'reactstrap';
 import LazyLoad from 'react-lazy-load';
 import { Controls, PlayState, Tween, Reveal } from 'react-gsap';
+import ModalForm from './ModalForm';
 
 function Contact(props) {
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => setModalOpen(!modalOpen);
+
   return (
     <div className="content-div footer bg-white d-flex" id="contact">
       <Container className="m-auto">
@@ -25,12 +32,14 @@ function Contact(props) {
               </Reveal>
             </div>
           </Col>
+
           <Col sm="6">
             <Reveal repeat>
               <h1 className='pl-4 text-center footer-name mb-2'>Ryan Griego</h1>
             </Reveal>
             <p className="mb-3 text-center">I am willing and able to relocate at short notice.</p>
           </Col>
+
           <Col sm="3" className="d-none d-sm-block">
             <div className="h-100 d-flex">
               <Reveal repeat>
@@ -42,6 +51,9 @@ function Contact(props) {
                 </Tween>
               </Reveal>
             </div>
+          </Col>
+          <Col sm="12" className="text-center">
+            <Button style={{ backgroundColor: '#1a9ba2', color: 'white' }} onClick={toggleModal}>Contact Me</Button>
           </Col>
         </Row>
         <div className="mt-3 mb-3">
@@ -126,6 +138,7 @@ function Contact(props) {
           </Tween>
         </Reveal>
       </Container>
+      <ModalForm isOpen={modalOpen} toggleModal={toggleModal} />
     </div>
   );
 }
