@@ -32,14 +32,12 @@ function Contact(props) {
               </Reveal>
             </div>
           </Col>
-
           <Col sm="6">
             <Reveal repeat>
               <h1 className='pl-4 text-center footer-name mb-2'>Ryan Griego</h1>
             </Reveal>
             <p className="mb-3 text-center">I am willing and able to relocate at short notice.</p>
           </Col>
-
           <Col sm="3" className="d-none d-sm-block">
             <div className="h-100 d-flex">
               <Reveal repeat>
