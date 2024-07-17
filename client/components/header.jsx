@@ -54,7 +54,7 @@ function Header() {
           <NavbarToggler navbar="true" onClick={toggle}/>
           <Collapse navbar isOpen={isOpen}>
             <Tween
-              from={{ y: '-100%', delay: 3 }} duration={0.3}
+              from={{ y: '-200px', delay: 3 }} duration={0.4}
             >
               <div style={{ marginLeft: 'auto' }}>
                 <Nav className="ml-auto" navbar>

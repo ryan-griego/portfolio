@@ -126,7 +126,6 @@ function Contact(props) {
           </Row>
         </div>
 
-
         <Reveal repeat>
           <Tween
             from={{ opacity: 0, y: '100px' }} duration={1}

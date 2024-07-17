@@ -22,10 +22,10 @@ const ModalForm = ({ isOpen, toggleModal }) => {
     Email: ${email}
     Phone: ${phone}
     Message: ${message}
-  `,
+  `
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
     setLoading(true);
 
@@ -69,7 +69,7 @@ const ModalForm = ({ isOpen, toggleModal }) => {
               name="name"
               id="name"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={e => setName(e.target.value)}
               required
             />
           </FormGroup>
@@ -80,7 +80,7 @@ const ModalForm = ({ isOpen, toggleModal }) => {
               name="company"
               id="company"
               value={company}
-              onChange={(e) => setCompany(e.target.value)}
+              onChange={e => setCompany(e.target.value)}
             />
           </FormGroup>
           <FormGroup>
@@ -90,7 +90,7 @@ const ModalForm = ({ isOpen, toggleModal }) => {
               name="email"
               id="email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={e => setEmail(e.target.value)}
               required
             />
           </FormGroup>
@@ -101,7 +101,7 @@ const ModalForm = ({ isOpen, toggleModal }) => {
               name="phone"
               id="phone"
               value={phone}
-              onChange={(e) => setPhone(e.target.value)}
+              onChange={e => setPhone(e.target.value)}
             />
           </FormGroup>
           <FormGroup>
@@ -111,7 +111,7 @@ const ModalForm = ({ isOpen, toggleModal }) => {
               name="message"
               id="message"
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={e => setMessage(e.target.value)}
               required
             />
           </FormGroup>
