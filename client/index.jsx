@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './components/app';
 
 ReactDOM.render(
-  <App />,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.querySelector('.main')
 );

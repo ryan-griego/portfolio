@@ -33,10 +33,10 @@ body {
 
 .bg-main {
   background-image: url('./images/home-background-ryan-griego.jpeg');
-      background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
 }
 
 .bg-white {
@@ -634,4 +634,77 @@ a.decoration-none:hover::after {
   100% {
     transform: translateX(100%);
   }
+}
+
+
+/* Container for the intro video section */
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  /* Light background color */
+  padding: 20px;
+}
+
+/* Text styling for the intro section */
+.intro-text {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 300;
+  /* Space between text and video */
+}
+
+.intro-text h1 {
+  color: white;
+  font-size: 2.5rem;
+  /* Large font size for the heading */
+  margin-bottom: 10px;
+  /* Space below the heading */
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  /* Slightly larger font for the paragraph */
+  color: white;
+  /* Dark gray color for the text */
+}
+
+/* Wrapper for the video to center it */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 300;
+  /* Full width of its container */
+}
+
+iframe {
+  max-width: 100%;
+  /* Ensure the iframe fits within its container */
+  border: none;
+  /* Remove the default border */
+}
+
+
+/* Styles for the back to home button */
+.view-portfolio-button {
+  background-color: #1a9ba2;
+  /* Adjust color as needed */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 300;
+
+}
+
+.view-portfolio-button:hover {
+  background-color: #1a9ba2;
+  /* Darker shade for hover effect */
 }
