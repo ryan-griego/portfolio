@@ -6,7 +6,7 @@ function IntroVideo() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const getQueryParams = (query) => {
+  const getQueryParams = query => {
     return query
       ? JSON.parse(
         '{"' +
@@ -28,17 +28,17 @@ function IntroVideo() {
   // };
 
   const handleViewPortfolio = () => {
-    navigate('/');  // Navigate to home page
+    navigate('/'); // Navigate to home page
   };
 
   return (
     <div className="intro-container bg-main">
       <div className="overlay-intro"></div>
       <div className="intro-text">
-        <h1>Hi {name ? name : 'there'}, Welcome to My Introduction Video</h1>
-        <p> I'm thrilled to apply for {position ? position : 'the position'} at {company ? company : 'the company'} - show the logo too</p>
+        <h1>Hi {name || 'there'}, Welcome to My Introduction Video</h1>
+        <p> I'm thrilled to apply for {position || 'the position'} at {company || 'the company'} - show the logo too</p>
       </div>
-        <div className="video-wrapper">
+      <div className="video-wrapper">
         <iframe
           width="800"
           height="450"
@@ -48,7 +48,7 @@ function IntroVideo() {
           allow="autoplay; encrypted-media"
           allowFullScreen
         ></iframe>
-        </div>
+      </div>
       <button className="view-portfolio-button" onClick={handleViewPortfolio}>
         View Portfolio
       </button>

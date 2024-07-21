@@ -8,7 +8,6 @@ import Tools from './tools';
 import Applications from './applications';
 // import Contact from './contact';
 
-
 const Home = () => {
   return (
     <div>
