@@ -36,7 +36,9 @@ function IntroVideo() {
       <div className="overlay-intro"></div>
       <div className="intro-text">
         <h1>Hi {name || 'there'}, Welcome to My Introduction Video</h1>
-        <p> I'm thrilled to apply for {position || 'the position'} at {company || 'the company'} - show the logo too</p>
+        {logo && <img src={logo} alt={`${company} logo`} className="company-logo" />}
+        <p>I'm excited about the opportunity to be a {position || 'the position'} at {company || 'the company'}</p>
+
       </div>
       <div className="video-wrapper">
         <iframe
