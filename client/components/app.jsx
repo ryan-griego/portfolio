@@ -44,14 +44,9 @@ class App extends React.Component {
 
               <Route path="/" element={<Home />} />
               <Route path="/intro-video" element={<IntroVideo />} />
-              {/* Add more routes here as needed */}
+
             </Routes>
-            {/* <Hero />
-            <AboutMe />
-            <Skills />
-            <Tools />
-            <Applications />
-            <Contact year={this.state.year} /> */}
+
           </React.Fragment>
         </Router>
       </>

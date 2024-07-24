@@ -37,7 +37,7 @@ function IntroVideo() {
       <div className="intro-text">
         <h1>Hi {name || 'there'}, Welcome to My Introduction Video</h1>
         {logo && <img src={logo} alt={`${company} logo`} className="company-logo" />}
-        <p>I'm excited about the opportunity to be a {position || 'the position'} at {company || 'the company'}</p>
+        <p>I'm excited about the opportunity to be a {position || 'QA engineer'} at {company || 'CrowdStrike'}</p>
 
       </div>
       <div className="video-wrapper">
