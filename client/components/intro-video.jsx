@@ -58,8 +58,7 @@
 //   );
 // }
 
-//export default IntroVideo;
-
+// export default IntroVideo;
 
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -82,8 +81,6 @@ function IntroVideo() {
 
   const queryParams = getQueryParams();
   const { name, company, position, logo } = queryParams;
-
-
 
   const handleViewPortfolio = () => {
     navigate('/');
