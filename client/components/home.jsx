@@ -6,7 +6,7 @@ import AboutMe from './about-me';
 import Skills from './skills';
 import Tools from './tools';
 import Applications from './applications';
-// import Contact from './contact';
+import Contact from './contact';
 
 const Home = () => {
   return (
@@ -17,8 +17,7 @@ const Home = () => {
       <Skills />
       <Tools />
       <Applications />
-      <Link to="/intro-video">Watch Intro Video</Link>
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 };
