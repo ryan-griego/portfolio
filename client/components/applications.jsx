@@ -27,7 +27,7 @@ class Applications extends React.Component {
           technologies: ['Next.js', 'TypeScript', 'Javascript', 'Tailwind CSS'],
           description: 'I finally made my own blog.',
           github: 'https://github.com/ryan-griego/blog',
-          live: 'https://www.franchisesnearme.com/'
+          live: 'https://ryangriego.com/blog'
         },
         {
           id: 1,
