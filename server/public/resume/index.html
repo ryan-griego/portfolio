@@ -4,191 +4,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ryan Griego Resume</title>
+  <title>Ryan Griego - Resume</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      background-color: #f0f0f0;
+      background-color: #e0e0e0;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      overflow-y: auto;
+      height: 100vh;
     }
 
     .container {
-      max-width: 800px;
-      margin: auto;
+      width: 8.5in;
+      max-width: 100%;
       background-color: #fff;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      min-height: 100%;
+      box-sizing: border-box;
+      height: 270% !important;
     }
 
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
+    .name-title {
       text-align: center;
-    }
-
-    h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-    }
-
-    h3 {
-      font-size: 20px;
-      margin-bottom: 5px;
+      font-size: 36px;
+      font-weight: bold;
+      color: #3d85cc;
     }
 
     .contact-info {
-      margin-bottom: 30px;
+      text-align: center;
+      font-size: 16px;
+      margin-top: 5px;
+      color: #666;
     }
 
-    .contact-info p {
-      margin-bottom: 5px;
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #3d85cc;
+      margin-top: 30px;
     }
 
-    .contact-info a,
-    .projects a,
-    .education a {
-      color: #007bff;
-      text-decoration: none;
+    .separator {
+      width: 100%;
+      height: 2px;
+      background-color: #3d85cc;
+      margin: 10px 0;
     }
 
-    .contact-info a:hover,
-    .projects a:hover,
-    .education a:hover {
-      text-decoration: underline;
+    .content {
+      margin-left: 20px;
+    }
+
+    .content p {
+      margin: 10px 0;
+    }
+
+    .job-title {
+      font-weight: bold;
+      font-size: 18px;
+      color: #3d85cc;
+    }
+
+    .company-location {
+      font-style: italic;
+      font-size: 16px;
+      color: #666;
     }
 
     ul {
-      list-style-type: none;
-      padding: 0;
+      margin: 10px 0 20px 20px;
+      padding-left: 20px;
     }
 
     ul li {
       margin-bottom: 10px;
     }
-
-    p {
-      margin: 5px 0;
-    }
   </style>
 </head>
 
 <body>
-
   <div class="container">
-
-    <h1>RYAN GRIEGO</h1>
-    <div class="contact-info">
-      <p><strong>Software Engineer</strong></p>
-      <p>Orange County, California • <a href="mailto:ryangriego@gmail.com">ryangriego@gmail.com</a> • (949) 310-8534</p>
-      <p><a href="https://www.linkedin.com/in/ryan-griego-2134a340/">LinkedIn</a> • <a
-          href="https://github.com/ryan-griego">GitHub</a> • <a href="https://www.ryangriego.com/">Portfolio</a></p>
+    <div class="name-title">Ryan Griego</div>
+    <div class="contact-info">Software Developer<br>
+      Lake Forest, California • ryangriego@gmail.com • (949) 310-8534
     </div>
 
-    <div class="skills">
-      <h2>SKILLS</h2>
+    <div class="section-title">Profile Summary</div>
+    <div class="separator"></div>
+    <div class="content">
+      <p>Talented Full Stack Developer with a wealth of experience delivering scalable web applications, building
+        intuitive user interfaces, and optimizing back-end processes, within fast-paced environments.</p>
+      <p>Extensive technical skill set, with mastery in JavaScript/TypeScript, React & Vue.js, Node.js, and PHP, along
+        with technologies such as cloud services such as AWS and CI/CD, enabling efficient and scalable product
+        development.</p>
+      <p>Impactful contributions during each phase of the Software Development Life Cycle, including optimizing MySQL
+        queries for report accuracy, designing responsive user interfaces, and systematically deploying new features
+        through automated CI/CD pipelines.</p>
+      <p>Engaged collaborator with strong interpersonal skills, able to influence and align multiple teams with
+        conflicting priorities to drive progress under aggressive time constraints.</p>
+    </div>
+
+    <div class="section-title">Technical Skills</div>
+    <div class="separator"></div>
+    <div class="content">
+      <p><strong>Languages:</strong> JavaScript, TypeScript, PHP</p>
+      <p><strong>Frameworks & Libraries:</strong> React, Next.js, Vue.js, Nuxt, Node.js/Express.js</p>
+      <p><strong>Databases:</strong> PostgreSQL, MongoDB</p>
+      <p><strong>Cloud Services & DevOps:</strong> AWS (EC2, Lambda, S3), CI/CD, Git</p>
+    </div>
+
+    <div class="section-title">Work Experience</div>
+    <div class="separator"></div>
+    <div class="content">
+      <div class="job-title">LifeMD</div>
+      <div class="company-location">Huntington Beach, CA</div>
+      <div class="job-title">Associate Front-End Engineer</div>
+      <div>Feb. 2021 - May 2023</div>
       <ul>
-        <li>React, Vue, Vuetify, HTML, CSS3, JavaScript, TypeScript, jQuery, PHP, XML, JSON, Ajax, Bootstrap, API
-          integration,
-          npm, composer, Node, Express JS, Firebase, Webpack, Visual Studio Code, GreenSock, HTTP, MJML, PostgreSQL,
-          MySQL, Tailwind CSS, JSX, Babel, Webpack, Postman, AWS, Docker</li>
+        <li>Participated in the technical effort by optimizing internal reporting, back-end processes and user
+          interfaces, utilizing technologies such as JavaScript and Vue.js, PHP, MySQL, and AWS.</li>
+        <li>Revamped the user interface by integrating Vue.js, employing Vuetify and reusable components, which yielded
+          an application performance boost.</li>
+        <li>Developed performant MySQL queries to supply data for internal reporting, thus improving report accuracy.
+        </li>
+        <li>Enhanced the efficiency of prescription generation by developing a PDF generator with PHP, transforming HTML
+          into downloadable PDFs using TCPDF.</li>
+        <li>Developed a Cron job with Bash, leveraging CRON scheduling, automated scripts, and AWS S3, which
+          systematically downloaded and archived the previous day's patient phone call recordings from Five9, storing
+          them securely in LifeMD's AWS S3 bucket.</li>
+        <li>Developed and deployed a call monitoring system, featuring patient call data tables and audio playback for
+          conversation review, using SQL and JavaScript, Vue.js, successfully enhancing data visualization and
+          interaction analysis.</li>
+        <li>Collaborated within a cross-functional team including the Admin Portal Team, the Director of Engineering,
+          and the CTO, employing Agile practices, including daily stand-up meetings and weekly sprints, to effectively
+          deliver under tight deadlines.</li>
+        <li>Delivered technical presentations to the team on new designs, features, and development plans. Maintained a
+          high engagement in meetings, asking calibrated questions to reach alignment and optimize for delivery.</li>
+      </ul>
+
+      <div class="job-title">Eagle Industrial Group</div>
+      <div class="company-location">Rancho Santa Margarita, California</div>
+      <div class="job-title">Front-End Web Developer</div>
+      <div>Mar. 2018 - Jul. 2020</div>
+      <ul>
+        <li>Developed three high-performing ecommerce platforms using HTML5, CSS3, JavaScript, and WordPress, enhancing
+          user interface designs with Bootstrap, and integrating seamless payment gateways with WooCommerce.</li>
+        <li>Implemented cost-reduction strategies by assuming responsibilities previously held by a higher-paid
+          contractor, utilizing in-house expertise to manage web development, which significantly lowered ongoing
+          service charges.</li>
+        <li>Engineered an automated email marketing campaign featuring Mailchimp, incorporating data segmentation and
+          personalized email workflows with content focusing on rack installation services, thereby generating between
+          200-300 additional installation inquiries monthly.</li>
+        <li>Implemented batch and automation scripts using Adobe Photoshop and Google Sheets, accelerating the
+          production process of print advertisements and achieving a throughput increase of 40%.</li>
+        <li>Created over 20 SEO-optimized blog articles to enhance the online visibility of the garage storage division
+          and redesigned sales materials, including presentations and advertisements, for both print and web formats.
+        </li>
+      </ul>
+
+      <div class="job-title">Eight Horses</div>
+      <div class="company-location">Irvine, California</div>
+      <div class="job-title">Front-End Web Developer (contract)</div>
+      <div>Sep. 2017 - Feb. 2018</div>
+      <ul>
+        <li>Collaborated with a team of copywriters, graphic designers and developers to produce website content and
+          emails for a large network of local and national clients.</li>
+        <li>Developed and maintained web pages using WordPress, Shopify, and BigCommerce, incorporating plugins for
+          Google Maps, chat functionality, and SEO, enhancing user interaction and site visibility.</li>
+      </ul>
+
+      <div class="job-title">Scuba.com</div>
+      <div class="company-location">Irvine, California</div>
+      <div class="job-title">Webmaster</div>
+      <div>Jul. 2014 - Jul. 2016</div>
+      <ul>
+        <li>Saved management 3 hours per week with promotional email campaigns, product combinations, themes, and
+          subject lines, driving increased site traffic and open rates.</li>
+        <li>Developed new branding assets for Scuba.com that aligned with the overall brand vision, including logos,
+          product packaging, brochures, business cards, promotional materials, and presentations.</li>
+        <li>Deployed a ChatGPT replica utilizing MongoDB to securely store user conversation histories, implementing
+          privacy measures and exploring GPT models, while optimizing for data integrity.</li>
+      </ul>
+
+      <div class="job-title">Chat RRG</div>
+      <div>Jan. 2024 - Apr. 2024</div>
+      <ul>
+        <li>Deployed a ChatGPT replica utilizing MongoDB to securely store user conversation histories, implementing
+          privacy measures and exploring GPT models, while optimizing for data integrity.</li>
       </ul>
     </div>
 
-    <div class="experience">
-      <h2>EXPERIENCE</h2>
-
-      <div>
-        <h3>Associate Front-End Engineer</h3>
-        <p>LifeMD | February 2021 ⏤ May 2023</p>
-        <ul>
-          <li>Worked on a team composed of developers, devOps engineers, product managers, Q/A testers and reported to
-            the
-            Director Of Engineering. My responsibilities were to build features and reports on internal patient care
-            applications.</li>
-          <li>Automated HTML transactional email generation and maintenance which greatly improved the production and
-            maintenance of branded emails.</li>
-          <li>Improved speed of prescription handling by building a prescription PDF generator using PHP to take HTML
-            and
-            convert it to a downloadable PDF.</li>
-          <li>Implemented cloud storage with our patient phone call recordings from Five9 and saved audio files to
-            LifeMD’s
-            AWS S3 bucket.</li>
-          <li>Improved call monitoring for management by creating a report that displays tables of patient call data
-            including an audio player to listen to customer service rep phone calls.</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Bootcamp Student</h3>
-        <p>LearningFuze | July 2020 ⏤ February 2021</p>
-        <ul>
-          <li>Programmed 300+ hours in a simulated agile work environment for an accelerated web development program.
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Front-End Web Developer</h3>
-        <p>Eagle Industrial Group | March 2018 ⏤ July 2020</p>
-        <ul>
-          <li>Built three functional and visually appealing online stores in collaboration with various 3rd party
-            contractors and the Director of Marketing.</li>
-          <li>Developed an automated email marketing campaign that offered rack installation services to new customers
-            which
-            resulted in an additional 200-300 installation inquiries per month.</li>
-          <li>Generated over 20 blog articles for the purpose of optimizing SEO of the garage storage division.</li>
-          <li>Created back-end API endpoints from SQL databases to build a dynamic order-tracking system.</li>
-          <li>Produced batch and automation scripts with Photoshop and Google Sheets to speed up production of print
-            advertisements.</li>
-        </ul>
-      </div>
-
+    <div class="section-title">Education</div>
+    <div class="separator"></div>
+    <div class="content">
+      <p><strong>Full-Stack Web Development Program</strong></p>
+      <p>LearningFuze • Jul. 2020 - Feb. 2021</p>
+      <p><strong>Bachelor of Science in Visual Communication Design</strong></p>
+      <p>San Francisco State University • Aug. 2011 - Jun. 2013</p>
     </div>
-
-    <div class="projects">
-      <h2>PROJECTS</h2>
-      <div>
-        <h3>Job Getter</h3>
-        <p>Track and send customized emails to individuals who are hiring at their respective companies. [ Nuxt 3 +
-          MongoDB
-          ]</p>
-        <p><a href="https://github.com/ryan-griego/job-getter">GitHub</a></p>
-      </div>
-
-      <div>
-        <h3>Chat RRG</h3>
-        <p>Chat GPT clone. Uses OpenAI API - I use this instead of a paid subscription to OpenAI because it saves money
-          on
-          development costs. [ Next.js + MongoDB ]</p>
-        <p><a href="https://github.com/ryan-griego/chat-rrg">GitHub</a></p>
-      </div>
-    </div>
-
-    <div class="education">
-      <h2>EDUCATION</h2>
-
-      <div>
-        <h3>Full-Stack Web Development Program</h3>
-        <p>LEARNINGFUZE</p>
-        <ul>
-          <li>Programmed 10-12 hours a day for 14 weeks (800+ hours) in a simulated Agile work environment</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Bachelor of Science in Visual Communication Design, Electives taken in Online Marketing</h3>
-        <p>SAN FRANCISCO STATE UNIVERSITY</p>
-        <p><a href="https://learningfuze.com/">LearningFuze</a> | <a href="https://www.sfsu.edu/index.html">SFSU</a></p>
-      </div>
-
-    </div>
-
   </div>
-
 </body>
 
 </html>
