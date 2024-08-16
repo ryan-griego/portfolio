@@ -21,13 +21,23 @@ class Applications extends React.Component {
       projects: [
         {
           id: 1,
+          image: '/images/blog-ryan-griego-thumbnail.png',
+          alt: 'Ryan Griego Blog Website Thumbnail',
+          name: 'My Blog',
+          technologies: ['Next.js', 'TypeScript', 'Javascript', 'Tailwind CSS'],
+          description: 'I finally made my own blog.',
+          github: 'https://github.com/ryan-griego/blog',
+          live: 'https://www.franchisesnearme.com/'
+        },
+        {
+          id: 1,
           image: '/images/franchisesnearme.png',
           alt: 'Franchisesnearme.com Website Thumbnail',
           name: 'Franchisesnearme.com',
           technologies: ['Wordpress', 'HTML', 'CSS'],
           description: 'Website for Spectrum Franchise Group.',
           github: 'none',
-          live: 'https://www.franchisesnearme.com/'
+          live: 'https://ryangriego.com/blog'
         },
         {
           id: 1,
