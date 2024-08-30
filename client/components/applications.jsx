@@ -37,7 +37,7 @@ class Applications extends React.Component {
           technologies: ['Wordpress', 'HTML', 'CSS'],
           description: 'Website for Spectrum Franchise Group.',
           github: 'none',
-          live: 'https://ryangriego.com/blog'
+          live: 'https://franchisesnearme.com/'
         },
         {
           id: 1,
