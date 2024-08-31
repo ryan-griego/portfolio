@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
 import Header from './header';
 import Hero from './hero';
 import AboutMe from './about-me';
@@ -8,18 +7,39 @@ import Tools from './tools';
 import Applications from './applications';
 import Contact from './contact';
 
-const Home = () => {
-  return (
-    <div>
-      <Header />
-      <Hero />
-      <AboutMe />
-      <Skills />
-      <Tools />
-      <Applications />
-      <Contact />
-    </div>
-  );
-};
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      year: null
+    };
+
+    this.getYear = this.getYear.bind(this);
+  }
+
+  getYear() {
+    const date = new Date();
+    const year = date.getFullYear();
+    this.setState({ year });
+  }
+
+  componentDidMount() {
+    this.getYear();
+  }
+
+  render() {
+    return (
+      <div>
+        <Header />
+        <Hero />
+        <AboutMe />
+        <Skills />
+        <Tools />
+        <Applications />
+        <Contact year={this.state.year} />
+      </div>
+    );
+  }
+}
 
 export default Home;
