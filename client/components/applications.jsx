@@ -19,8 +19,18 @@ class Applications extends React.Component {
       view: 'grid',
       iconView: null,
       projects: [
-        {
+         {
           id: 1,
+          image: '/images/chatrrg-thumbnail.jpg',
+          alt: 'ChatRRG - ChatGPT Clone',
+          name: 'ChatRRG',
+          technologies: ['Next.js', 'React', 'Javascript', 'Tailwind CSS', 'MongoDB', 'Auth0'],
+          description: 'Chat RRG is an application that allows users to interact with OpenAI\'s ChatGPT LLM',
+          github: 'https://github.com/ryan-griego/chat-rrg/',
+          live: 'https://chatrrg.ryangriego.com/'
+        },
+        {
+          id: 2,
           image: '/images/blog-ryan-griego-thumbnail.png',
           alt: 'Ryan Griego Blog Website Thumbnail',
           name: 'My Blog',
@@ -30,7 +40,7 @@ class Applications extends React.Component {
           live: 'https://ryangriego.com/blog'
         },
         {
-          id: 1,
+          id: 3,
           image: '/images/franchisesnearme.png',
           alt: 'Franchisesnearme.com Website Thumbnail',
           name: 'Franchisesnearme.com',
@@ -40,7 +50,7 @@ class Applications extends React.Component {
           live: 'https://franchisesnearme.com/'
         },
         {
-          id: 1,
+          id: 4,
           image: '/images/saferacks.jpg',
           alt: 'SafeRacks Thumbnail',
           name: 'SafeRacks',
@@ -50,7 +60,7 @@ class Applications extends React.Component {
           live: 'https://www.saferacks.com/'
         },
         {
-          id: 2,
+          id: 5,
           image: '/images/monsterrax.jpg',
           alt: 'Monsterrax Thumbnail',
           name: 'Monsterrax',
@@ -60,7 +70,7 @@ class Applications extends React.Component {
           live: 'https://www.Monsterrax.com/'
         },
         {
-          id: 1,
+          id: 6,
           image: '/images/booksforyourprofession.jpg',
           alt: 'Books For Your Profession Project Thumbnail',
           name: 'Books For Your Professsion',
@@ -70,7 +80,7 @@ class Applications extends React.Component {
           live: 'https://booksforyourprofession.ryangriego.com/'
         },
         {
-          id: 2,
+          id: 7,
           image: '/images/gameknight.jpg',
           alt: 'GameKnight Project Thumbnail',
           name: 'GameKnight',
@@ -80,7 +90,7 @@ class Applications extends React.Component {
           live: 'https://gameknight.ryangriego.com/'
         },
         {
-          id: 6,
+          id: 8,
           image: '/images/blank.png',
           alt: '',
           name: 'Coming Soon',

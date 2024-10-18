@@ -6,3 +6,6 @@ server/public/images/.DS_Store
 node_modules/
 server/public/main.js
 server/public/main.js.map
+## Adding Docker file and nginx/ until I deploy with DO
+Dockerfile
+nginx/

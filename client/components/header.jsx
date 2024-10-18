@@ -103,7 +103,7 @@ function Header() {
                     </Link>
                   </NavItem>
                   <NavItem className="ml-md-5">
-                    <a href="https://ryangriego.com/blog"
+                    <a href={`${window.location.origin}/blog`}
                       target="_blank"
                       className={navbar ? 'pointer px-0 nav-link' : 'pointer px-0 nav-link-white'}
                     >
