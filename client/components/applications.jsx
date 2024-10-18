@@ -19,7 +19,7 @@ class Applications extends React.Component {
       view: 'grid',
       iconView: null,
       projects: [
-         {
+        {
           id: 1,
           image: '/images/chatrrg-thumbnail.jpg',
           alt: 'ChatRRG - ChatGPT Clone',
