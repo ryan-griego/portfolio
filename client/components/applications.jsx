@@ -19,25 +19,15 @@ class Applications extends React.Component {
       view: 'grid',
       iconView: null,
       projects: [
-        // {
-        //   id: 1,
-        //   image: '/images/chatrrg-thumbnail.jpg',
-        //   alt: 'ChatRRG - ChatGPT Clone',
-        //   name: 'ChatRRG',
-        //   technologies: ['Next.js', 'React', 'Javascript', 'Tailwind CSS', 'MongoDB', 'Auth0'],
-        //   description: 'Chat RRG is an application that allows users to interact with OpenChatGPT LLM',
-        //   github: 'https://github.com/ryan-griego/chat-rrg/',
-        //   live: 'https://chatrrg.ryangriego.com/'
-        // },
         {
           id: 1,
-          image: '/images/blog-ryan-griego-thumbnail.png',
-          alt: 'Ryan Griego Blog Website Thumbnail',
-          name: 'My Blog',
-          technologies: ['Next.js', 'TypeScript', 'Javascript', 'Tailwind CSS'],
+          image: '/images/chatrrg-thumbnail.jpg',
+          alt: 'ChatRRG - ChatGPT Clone',
+          name: 'ChatRRG',
+          technologies: ['Next.js', 'MongoDB', 'Auth0'],
           description: 'Allows users to interface with an OpenAI Large Language Model.',
-          github: 'https://github.com/ryan-griego/blog',
-          live: 'https://ryangriego.com/blog'
+          github: 'https://github.com/ryan-griego/chat-rrg/',
+          live: 'https://chatrrg.ryangriego.com/'
         },
         {
           id: 2,
