@@ -1,16 +1,6 @@
-@font-face {
-  font-family: Corsa Grotesk;
-  src: url(fonts/Corsa_Grotesk_Regular.otf);
-}
-
-@font-face {
-  font-family: Corsa Grotesk Thin;
-  src: url(fonts/Corsa_Grotesk_Thin.otf);
-}
-
 body {
   margin: 0 0 0 0;
-  font-family: 'Corsa Grotesk', 'Corsa Grotesk Thin', sans-serif;
+  font: 14px/22px "Roboto", Verdana, Arial, geneva, sans-serif;
   font-size: 0;
   min-height: 100vh;
 }
@@ -18,7 +8,11 @@ body {
 .subheading {
   font-size: 40px!important;
   letter-spacing: 1.1px;
-
+  font: 180px FontSiteSansBoldCondensed,
+      Verdana,
+      Helvetica,
+      Arial,
+      sans-serif;
 }
 
 * {
@@ -93,20 +87,15 @@ body {
   min-height: 100vh;
 }
 
-/* [1] The container */
 .img-hover-zoom {
   height: 300px;
-  /* [1.1] Set it as per your need */
   overflow: hidden;
-  /* [1.2] Hide the overflowing of child elements */
 }
 
-/* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
   transition: transform .5s ease;
 }
 
-/* [3] Finally, transforming the image when container gets hovered */
 .img-hover-zoom:hover img {
   transform: scale(1.5);
 }
@@ -190,14 +179,26 @@ body {
 h1 {
   font-size: 3.5rem;
   font-weight: 600;
+  font: 180px FontSiteSansBoldCondensed,
+      Verdana,
+      Helvetica,
+      Arial,
+      sans-serif;
 }
 
 h3 {
   font-size: 2.5rem;
+  font: 30px FontSiteSansBoldCondensed,
+      Verdana,
+      Helvetica,
+      Arial,
+      sans-serif;
+      text-transform: uppercase;
 }
 
 p {
   font-weight: 100;
+  line-height: 160%;
 }
 
 a {
@@ -300,7 +301,7 @@ a.decoration-none:hover::after {
 .nav-item{
   text-transform: uppercase;
   letter-spacing: .8px;
-  font-weight:bolder;
+  font-weight:normal;
 }
 
 .sticky-top {
@@ -503,7 +504,7 @@ a.decoration-none:hover::after {
   color: black;
   font-size:2.2rem;
   letter-spacing: 1.6px;
-  font-weight: bolder;
+  font-weight: 599;
 }
 
 .header-logo-dark {
@@ -714,4 +715,77 @@ iframe {
   height: 140px;
   object-fit: contain;
   margin-top: 10px;
+}
+
+
+/* Top Books Page */
+
+.top-books-header {
+    font-weight: 400;
+    font: 2.5rem FontSiteSansBoldCondensed,
+      Verdana,
+      Helvetica,
+      Arial,
+      sans-serif;
+  padding-bottom: 25px;
+}
+
+.nav-block {
+  margin-top: 200px;
+}
+
+.books-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.book-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.book-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.book-card h2 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.book-card h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.book-card h2 a:hover {
+  color: #0073e6;
+  /* Adjust to match your site's theme */
+}
+
+.book-card p {
+  font-size: 0.9em;
+  color: #666;
 }

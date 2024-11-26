@@ -146,7 +146,7 @@ class Applications extends React.Component {
                   from={{ opacity: 0, x: '-100px' }} duration={0.5}
                   to={{ opacity: 1, x: '0px' }} duration={0.5}
                 >
-                  <h3>Websites</h3>
+                  <h3>Projects</h3>
                 </Tween>
               </Reveal>
 

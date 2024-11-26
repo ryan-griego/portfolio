@@ -10,6 +10,7 @@ import Applications from './applications';
 import Contact from './contact';
 import Home from './home';
 import IntroVideo from './intro-video';
+import TopBooks from './top-books';
 
 class App extends React.Component {
   constructor() {
@@ -40,6 +41,7 @@ class App extends React.Component {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/intro-video" element={<IntroVideo />} />
+            <Route path="/top-books" element={<TopBooks />} />
           </Routes>
         </React.Fragment>
       </Router>
