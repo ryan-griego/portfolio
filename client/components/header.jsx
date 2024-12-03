@@ -6,7 +6,7 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
+  NavItem
 } from 'reactstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Tween } from 'react-gsap';
@@ -28,7 +28,7 @@ function Header({ isDark }) {
     if (location.pathname === '/') {
       const handleScroll = () => {
         const scrollPosition = window.scrollY;
-        if (scrollPosition > 200) {
+        if (scrollPosition > 600) {
           setNavbar(true);
         } else {
           setNavbar(false);
@@ -45,17 +45,19 @@ function Header({ isDark }) {
     }
   }, [location.pathname]);
 
-  useEffect(() => {
-    if (!isDark) {
-      setNavbar(true);
-    } else {
-      if (location.pathname === '/') {
-        setNavbar(false);
-      } else {
-        setNavbar(true);
-      }
-    }
-  }, [isDark, location.pathname]);
+  // Remove because it's breaking the nav bg change on scroll
+
+  // useEffect(() => {
+  //   if (!isDark) {
+  //     setNavbar(true);
+  //   } else {
+  //     if (location.pathname === '/') {
+  //       setNavbar(false);
+  //     } else {
+  //       setNavbar(true);
+  //     }
+  //   }
+  // }, [isDark, location.pathname]);
 
   return (
     <Container
@@ -63,7 +65,7 @@ function Header({ isDark }) {
       className={
         navbar
           ? 'py-3 shadow-lg sticky-top bg-white'
-          : 'py-3 shadow-lg sticky-top bg-transparent'
+          : 'py-3 sticky-top bg-transparent'
       }
     >
       <Navbar color="faded" light expand="md" className="row py-0 navbar">

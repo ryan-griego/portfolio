@@ -36,7 +36,7 @@ class App extends React.Component {
     return (
       <Router>
         <React.Fragment>
-          {/* Uncomment this if you are using Sugar for preloading */}
+
           <Sugar color="#24ecd7;" background="linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(22,91,92,1) 39%, rgba(17,39,47,1) 51%, rgba(2,4,4,1) 80%)" />
           <Routes>
             <Route path="/" element={<Home />} />
